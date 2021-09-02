@@ -1,0 +1,13 @@
+
+
+/* --------- Global --------- */
+:root{
+  --main-color: #00A8CC;
+  --bg-color: #FFF8E5;
+  --second-color: #005082;
+  --third-color: #000839;
+  --fourth-color: #FFA41B;
+}
+body{
+  background-color: var(--bg-color);
+}
