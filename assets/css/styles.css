@@ -25,6 +25,28 @@ body{
   background-color: #000000;
   font-family: 'Lato', sans-serif;
 }
+h2{
+  font-size: 3rem;
+  font-weight: 900;
+  letter-spacing: 2px;
+}
+h3{
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: capitalize;
+}
+h4{
+  font-size: 1.2rem;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+h2 ,h3, h4{
+  color: var(--fourth-color);
+}
+
+/*  */
+
 .container-main{
   width: 90%;
   max-width: 1300px;
@@ -114,14 +136,16 @@ body{
   font-weight: 900;
   padding-left: 20px;
 }
-.frontend{
-  color: var(--fourth-color);
-}
 .header-description h2{
   font-size: 2.5rem;
-  font-weight: 900;
+  letter-spacing: 0;
   margin-bottom: 20px;
   padding-left: 30px;
+  color: var(--fifth-color);
+}
+.frontend{
+  color: var(--fourth-color);
+  letter-spacing: 2;
 }
 .header-description p{
   font-size: 1.2rem;
@@ -145,10 +169,11 @@ body{
   order: 3;
   margin-bottom: 500px;
 }
-.content-about-me{
+.container-about-me{
   display: flex;
   justify-content: space-evenly;
   padding-top: 5px;
+  margin-bottom: 20px;
 }
 .img-container{
   width: 30%;
@@ -171,12 +196,8 @@ body{
 #about-me h2{
   text-transform: capitalize;
   align-self: flex-start;
-  /* text-align: center; */
-  /* padding-left: 30px; */
-  color: var(--fourth-color);
   margin-bottom: 20px;
-  font-size: 3rem;
-  font-weight: 900;
+  font-weight: 900; 
 }
 .about-me-content p,ul{
   font-size: 1.5rem;
@@ -184,6 +205,7 @@ body{
 .about-me-content h3{
   margin: 20px 0;
   color: var(--fourth-color);
+  text-transform: capitalize;
   font-size: 2rem;
   font-weight: 900;
 }
@@ -208,4 +230,56 @@ body{
 }
 .about-me-content .fab{
   font-size: 2rem;
+}
+
+/* --------- education section --------- */
+#education{
+}
+#education h2{
+  margin: 50px 0 30px;
+  padding-bottom: 10px;
+  text-align: center;
+  text-transform: uppercase;
+  border-bottom: 1px solid var(--fourth-color);
+}
+.formal-education h3{
+  margin-bottom: 10px;
+}
+.formal-education .content{
+  padding-left: 20px;
+}
+.content h4{
+  font-size: 1.5rem;
+  text-decoration: underline;
+  margin-bottom: 5px;
+}
+.content p{
+  font-size: 1.3rem;
+  padding-left: 10px;
+  text-transform: capitalize;
+}
+.online-education h3{
+  margin: 10px 0;
+}
+.course-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.course-container .course{
+  width: 30%;
+  margin-bottom: 10px;
+  padding-bottom: 5px;
+  min-height: 135px;
+  font-size: 1.2rem;
+  border-bottom: 1px solid #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.course h4{
+  color: #00A8CC;
+}
+.course a{
+  color: #0E76A8;
 }
