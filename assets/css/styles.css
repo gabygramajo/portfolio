@@ -34,11 +34,13 @@ h3 {
 }
 p,
 a,
-button {
+button,
+li {
   font-size: 2.2rem;
 }
-h1, h2, h3, p {
+h1, h2, h3, p, ul {
   margin: 0;
+  padding: 0;
 }
 /* general styles */
 .btn {
