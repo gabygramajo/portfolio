@@ -1,6 +1,7 @@
 /* global */
 html {
   box-sizing: border-box;
+  font-size: 62.5%;
 }
 *, *:before, *:after {
   box-sizing: inherit;
@@ -8,47 +9,153 @@ html {
 img {
   max-width: 100%;
 }
+a {
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  cursor: pointer;
+}
 body {
   margin: 0;
   display: flex;
   flex-wrap: wrap;
   position: relative;
+  background-color: #092635;
+  color: #fff;
 }
-/*  */
-#header,
-#main,
-#footer {
-  border: 1px solid black;
+h1 {
+  font-size: 4rem;
+}
+h2 {
+  font-size: 3.6rem;
+}
+h3 {
+  font-size: 3rem;
+}
+p,
+a,
+button {
+  font-size: 2.2rem;
+}
+h1, h2, h3, p {
+  margin: 0;
+}
+/* general styles */
+.btn {
+  display: inline-block;
+  padding: 1.4rem;
+  font-size: 2.8rem;
+  font-weight: bold;
+  border-radius: 1rem;
+  cursor: pointer;
+}
+.title-section {
+  font-size: 4.6rem;
+  margin-bottom: 2rem;
 }
 #header,
-#main {
+#about-me ,
+#contact  {
   height: 100vh;
+  min-height: 50rem;
 }
+
+/* home header */
 #header {
-  width: 30%;
+  width: 20%;
   order: 1;
   position: fixed;
+  border-right: 1px solid black;
+  text-align: center;
+  padding-top: 5%;
+}
+#navbar {
+  padding-top: 5%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+.navbar__item {
+  font-size: 3rem;
+  text-transform: capitalize;
+}
+/* main */
+#main,
+#footer {
+  width: 80%;
 }
 #main {
-  width: 70%;
+  height: 100%;
   order: 2;
   position: relative;
-  left: 30%;
+  left: 20%;
+  padding: 6% 0 0 2%;
 }
+
+/* home */
+#home {
+  height: 100vh;
+  min-height: 50rem;
+}
+#name {
+  font-size: 8rem;
+}
+#profession {
+  font-size: 5rem;
+}
+#name {
+  margin-bottom: 1rem;
+}
+#profession {
+  margin-bottom: 10%;
+}
+.home__text {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+
+/* projects */
+#about-me,
+#projects,
+#contact {
+  padding-top: 6%;
+}
+.grid-projects {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.project {
+  max-width: 30rem;
+  background-color: #1B4242;
+  border-radius: 1rem;
+  overflow: hidden;
+  padding: .8rem .4rem;
+}
+.project__cover {
+  overflow: hidden;
+  border-radius: 1rem;
+}
+/* footer */
 #footer {
-  width: 70%;
+  border-top: 1px solid black;
   order: 3;
   height: 20vh;
   position: relative;
-  left: 30%;
+  left: 20%;
 }
 
 /* Media querys */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
   #header,
   #main,
   #footer {
     position: static;
     width: 100%;
+  }
+  #header {
+    border-right: none;
+    border-bottom: 1px solid black;
   }
 }
