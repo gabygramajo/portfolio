@@ -1,0 +1,54 @@
+/* global */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+img {
+  max-width: 100%;
+}
+body {
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+}
+/*  */
+#header,
+#main,
+#footer {
+  border: 1px solid black;
+}
+#header,
+#main {
+  height: 100vh;
+}
+#header {
+  width: 30%;
+  order: 1;
+  position: fixed;
+}
+#main {
+  width: 70%;
+  order: 2;
+  position: relative;
+  left: 30%;
+}
+#footer {
+  width: 70%;
+  order: 3;
+  height: 20vh;
+  position: relative;
+  left: 30%;
+}
+
+/* Media querys */
+@media screen and (max-width: 600px) {
+  #header,
+  #main,
+  #footer {
+    position: static;
+    width: 100%;
+  }
+}
