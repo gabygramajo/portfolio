@@ -66,7 +66,8 @@ h1, h2, h3, p, ul {
   gap: 2rem;
 }
 #header,
-#contact  {
+#contact,
+#skills  {
   height: 100vh;
   min-height: 50rem;
 }
@@ -92,7 +93,7 @@ h1, h2, h3, p, ul {
 }
 /* main */
 #main,
-#footer {
+#contact {
   width: 80%;
 }
 #main {
@@ -151,8 +152,9 @@ h1, h2, h3, p, ul {
 }
 /* projects */
 #projects,
-#contact {
-  padding-top: 6%;
+#contact,
+#skills {
+  padding-top: 2%;
 }
 .grid-projects {
   display: flex;
@@ -171,20 +173,44 @@ h1, h2, h3, p, ul {
   overflow: hidden;
   border-radius: 1rem;
 }
-/* footer */
-#footer {
+/* contact */
+#contact {
   border-top: 1px solid black;
   order: 3;
-  height: 20vh;
   position: relative;
   left: 20%;
+  padding-top: 8%;
+  padding-left: 5%;
 }
-
+#contact .title-section {
+  margin-bottom: 4rem;
+}
+#contact .social-networks {
+  flex-direction: column;
+  gap: 4rem;
+  padding-left: 2rem;
+}
+#contact .icon {
+  width: 100%;
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+#contact .icon svg{
+  width: 5rem;
+}
+.contact-item {
+  font-size: 3.4rem;
+}
+#contact .container-cv {
+  padding-left: 2rem;
+  margin-top: 4rem;
+}
 /* Media querys */
 @media screen and (max-width: 700px) {
   #header,
   #main,
-  #footer {
+  #contact {
     position: static;
     width: 100%;
   }
