@@ -6,7 +6,8 @@ html {
 *, *:before, *:after {
   box-sizing: inherit;
 }
-img {
+img,
+svg {
   max-width: 100%;
 }
 a {
@@ -55,8 +56,16 @@ h1, h2, h3, p, ul {
   font-size: 4.6rem;
   margin-bottom: 2rem;
 }
+.icon {
+  display: inline-block;
+  width: 5rem;
+}
+.social-networks {
+  padding: 1rem 0;
+  display: flex;
+  gap: 2rem;
+}
 #header,
-#about-me ,
 #contact  {
   height: 100vh;
   min-height: 50rem;
@@ -91,33 +100,56 @@ h1, h2, h3, p, ul {
   order: 2;
   position: relative;
   left: 20%;
-  padding: 6% 0 0 2%;
+  padding: 7% 0 0 2%;
 }
 
 /* home */
 #home {
   height: 100vh;
   min-height: 50rem;
+  padding-left: 5%;
 }
 #name {
   font-size: 8rem;
+  line-height: 8rem;
+  margin-bottom: 1.6rem;
 }
 #profession {
   font-size: 5rem;
-}
-#name {
-  margin-bottom: 1rem;
-}
-#profession {
-  margin-bottom: 10%;
+  margin-bottom: 1.6rem;
 }
 .home__text {
   font-size: 3rem;
   margin-bottom: 2rem;
 }
-
+#home .social-networks {
+  margin-bottom: 2rem;
+}
+/* about me */
+#about-me {
+  padding-top: 2%;
+}
+.my-prensentation {
+  margin-bottom: 2rem;
+}
+.training__title--1 {
+  margin-top: 1.8rem;
+}
+.training__title--2 {
+  font-size: 2.6rem;
+  margin-top: 1rem;
+}
+.training {
+  padding-left: .8rem;
+}
+.certification-lists {
+  padding-left: 1.8rem;
+  list-style: none;
+}
+.certification-lists__item {
+  font-size: 2rem;
+}
 /* projects */
-#about-me,
 #projects,
 #contact {
   padding-top: 6%;
