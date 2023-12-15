@@ -175,7 +175,6 @@ h1, h2, h3, p, ul {
 }
 /* contact */
 #contact {
-  border-top: 1px solid black;
   order: 3;
   position: relative;
   left: 20%;
