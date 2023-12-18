@@ -66,8 +66,7 @@ h1, h2, h3, p, ul {
   gap: 2rem;
 }
 #header,
-#contact,
-#skills  {
+#contact {
   height: 100vh;
   min-height: 50rem;
 }
@@ -173,13 +172,38 @@ h1, h2, h3, p, ul {
   overflow: hidden;
   border-radius: 1rem;
 }
+/* skills */
+.skills__container {
+  margin-top: 1rem;
+  padding-left: 5rem;
+}
+.skills__title {
+  text-transform: uppercase;
+}
+.skills__items {
+  margin-top: 1rem;
+
+  padding: .8rem;
+  font-size: 5rem;
+  display: flex;
+  gap: 2rem;
+}
+.fa-database{
+  font-size: 4rem;
+}
+.sql {
+  font-size: 2rem;
+}
+.item-logo {
+  width: 7rem;
+}
 /* contact */
 #contact {
   order: 3;
   position: relative;
   left: 20%;
   padding-top: 8%;
-  padding-left: 5%;
+  padding-left: 2%;
 }
 #contact .title-section {
   margin-bottom: 4rem;
@@ -187,7 +211,7 @@ h1, h2, h3, p, ul {
 #contact .social-networks {
   flex-direction: column;
   gap: 4rem;
-  padding-left: 2rem;
+  padding-left: 5rem;
 }
 #contact .icon {
   width: 100%;
