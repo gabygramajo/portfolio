@@ -53,6 +53,9 @@ h1, h2, h3, p, ul {
   cursor: pointer;
   color: #000;
 }
+#toggle-navbar {
+  display: none;
+}
 .title-section {
   font-size: 4.6rem;
   margin-bottom: 2rem;
@@ -280,16 +283,65 @@ h1, h2, h3, p, ul {
 }
 /* Media querys */
 @media screen and (max-width: 700px) {
-  #header,
+  /* #header, */
   #main,
   #contact {
     position: static;
     width: 100%;
   }
   #header {
+    /* display: none; */
     border-right: none;
     border-bottom: 1px solid black;
+    background-color: blue;
+    width: .4rem;
+    position: fixed;
+    z-index: 10;
+    padding-top: 0;
   }
+  #header__content {
+    display: none;
+  }
+  #navbar {
+    padding-top: 0;
+  }
+  #toggle-navbar {
+    background-color: blue;
+    color: #fff;
+    font-size: 3rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+    display: inline-block;
+    position: absolute;
+    bottom: 0;
+    height: 50px;
+    display: flex;
+    align-items: center;
+  }
+  #toggle-navbar.left {
+    left: .4rem;
+    padding: 0.4rem 0.8rem 0.4rem 0;
+    border-top: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+    border-right: 2px solid #fff;
+    border-top-right-radius: 100px;
+    border-bottom-right-radius: 100px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+  } 
+  #toggle-navbar.right {
+    right: 0;
+    justify-content: center;
+    padding: 0.4rem 0.4rem 0.4rem 0.8rem;
+    border-top: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+    border-left: 2px solid #fff;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-top-left-radius: 100px;
+    border-bottom-left-radius: 100px;
+  } 
   #name {
     font-size: 4rem;
     line-height: 4rem;
@@ -305,6 +357,7 @@ h1, h2, h3, p, ul {
   }
   #main {
     padding: 7% 2% 0 2%;
+    background-color: violet;
   }
   .certification-lists {
     width: 90%;
