@@ -231,11 +231,11 @@ h1, h2, h3, p, ul {
 }
 .skills__items {
   margin-top: 1rem;
-
   padding: .8rem;
   font-size: 5rem;
   display: flex;
   gap: 2rem;
+  flex-wrap: wrap;
 }
 .fa-database{
   font-size: 4rem;
@@ -289,5 +289,39 @@ h1, h2, h3, p, ul {
   #header {
     border-right: none;
     border-bottom: 1px solid black;
+  }
+  #name {
+    font-size: 4rem;
+    line-height: 4rem;
+  }
+  #profession {
+    font-size: 3rem;
+  }
+  .home__text {
+    font-size: 2.6rem;
+  }
+  .btn {
+    font-size: 2.2rem;
+  }
+  #main {
+    padding: 7% 2% 0 2%;
+  }
+  .certification-lists {
+    width: 90%;
+}
+  .skills__container {
+    padding-left: 2rem;
+  }
+  #contact {
+    height: auto;
+  }
+  #contact .social-networks {
+    padding-left: 0;
+  }
+  .contact-item {
+    font-size: 1.8rem;
+  }
+  .download-cv {
+    margin: 0 auto;
   }
 }
