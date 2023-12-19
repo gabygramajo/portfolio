@@ -196,6 +196,31 @@ h1, h2, h3, p, ul {
   font-size: 2rem;
   text-align: justify;
 }
+.go-to {
+  border-top: 1px solid #b5b5b5;
+  margin-top: 0.4rem;
+  padding-top: 0.8rem;
+  padding-bottom: 0.4rem;
+  display: flex;
+  gap: 1rem;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.go-to__live-view,
+.go-to__github {
+  color: #000;
+  border: 1px solid #000;
+  border-radius: 1rem;
+  font-size: 2rem;
+  font-weight: bold;
+  padding: .4rem;
+}
+.go-to__live-view:hover,
+.go-to__github:hover {
+  background-color: #000;
+  color: #fff;
+  border: 1px solid #6dcf04;
+}
 /* skills */
 .skills__container {
   margin-top: 1rem;
