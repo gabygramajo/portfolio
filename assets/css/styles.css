@@ -51,6 +51,7 @@ h1, h2, h3, p, ul {
   font-weight: bold;
   border-radius: 1rem;
   cursor: pointer;
+  color: #000;
 }
 .title-section {
   font-size: 4.6rem;
@@ -155,6 +156,9 @@ h1, h2, h3, p, ul {
 #skills {
   padding-top: 2%;
 }
+#projects {
+  margin-bottom: 2rem;
+}
 .grid-projects {
   display: flex;
   gap: 1rem;
@@ -163,14 +167,34 @@ h1, h2, h3, p, ul {
 }
 .project {
   max-width: 30rem;
-  background-color: #1B4242;
+  background-color: #fbfbfb;
+  color: #000;
   border-radius: 1rem;
   overflow: hidden;
-  padding: .8rem .4rem;
+  padding: .4rem;
 }
 .project__cover {
   overflow: hidden;
   border-radius: 1rem;
+}
+.project__description {
+  padding: .4rem;
+}
+.project__title,
+.project__title--2,
+.project__text {
+  margin-bottom: .8rem;
+  letter-spacing: 2px;
+}
+.project__title {
+  font-size: 2.8rem;
+}
+.project__title--2 {
+  font-size: 2.4rem;
+}
+.project__text {
+  font-size: 2rem;
+  text-align: justify;
 }
 /* skills */
 .skills__container {
