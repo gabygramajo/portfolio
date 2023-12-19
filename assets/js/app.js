@@ -24,5 +24,3 @@ function toggleNavbar() {
 }
 
 btnToggleNavbar.addEventListener("click", toggleNavbar);
-// document.querySelectorAll(".navbar__item")
-        // .forEach((e) => e.addEventListener("click", hiddenNavbar));
