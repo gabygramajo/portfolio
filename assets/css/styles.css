@@ -76,12 +76,31 @@ h1, h2, h3, p, ul {
   min-height: 50rem;
 }
 /* user profile */
-#user-profile img {
+#user-profile {
   border-radius: 50%;
+  background-color: #fbfbfb;
+  margin: 0 auto;
+  display: grid;
+  place-content: center;
+  background-image: url('https://images.pexels.com/photos/2653362/pexels-photo-2653362.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+  background-position: center;
+  background-size: cover;
+}
+#user-profile,
+#user-profile a,
+#user-profile img {
+  width: 250px;
+  height: 250px;
+}
+#user-profile img {
+  object-fit: cover;
+  border-radius: 50%;
+
 }
 /* home header */
 #header {
   width: 20%;
+  min-width: 260px;
   order: 1;
   position: fixed;
   border-right: 1px solid black;
@@ -101,7 +120,8 @@ h1, h2, h3, p, ul {
 /* main */
 #main,
 #contact {
-  width: 80%;
+  min-width: 76%;
+  max-width: 80%;
 }
 #main {
   height: 100%;
@@ -138,7 +158,7 @@ h1, h2, h3, p, ul {
   padding-top: 2%;
 }
 .my-prensentation {
-  max-width: 96%;
+  max-width: 95%;
   margin-bottom: 2rem;
 }
 .my-prensentation__text {
@@ -176,10 +196,12 @@ h1, h2, h3, p, ul {
   display: flex;
   gap: 1rem;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: flex-start;
+  padding-right: 0.8rem;
 }
 .project {
-  max-width: 30rem;
+  flex-basis: 26rem;
+  flex-grow: 1;
   background-color: #fbfbfb;
   color: #000;
   border-radius: 1rem;
@@ -207,7 +229,11 @@ h1, h2, h3, p, ul {
 }
 .project__text {
   font-size: 2rem;
-  text-align: justify;
+  text-align: left;
+}
+.project__text,
+.project__stack {
+  padding-left: .8rem;
 }
 .go-to {
   border-top: 1px solid #b5b5b5;
@@ -292,6 +318,12 @@ h1, h2, h3, p, ul {
   margin-top: 4rem;
 }
 /* Media querys */
+@media screen and (max-width: 1300px) {
+  #main,
+  #contact {
+    left: 260px;
+  }
+}
 @media screen and (max-width: 700px) {
   /* mobile general */
   #home, #about-me, #projects, #skills, #contact {
@@ -302,6 +334,7 @@ h1, h2, h3, p, ul {
   #contact {
     position: static;
     width: 100%;
+    max-width: 700px;
   }
   #header,
   #header__content {
@@ -327,6 +360,7 @@ h1, h2, h3, p, ul {
   #user-profile {
     margin-bottom: 1rem;
   }
+
   #user-profile img {
     width: 280px;
   }
@@ -372,13 +406,15 @@ h1, h2, h3, p, ul {
   }
   #main {
     padding: 7% 2% 0 2%;
-    background-color: violet;
   }
   .certification-lists {
     width: 90%;
 }
   .skills__container {
     padding-left: 2rem;
+  }
+  .grid-projects {
+    padding: 0;
   }
   #contact {
     display: grid;
