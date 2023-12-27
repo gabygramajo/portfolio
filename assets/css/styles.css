@@ -293,25 +293,42 @@ h1, h2, h3, p, ul {
 }
 /* Media querys */
 @media screen and (max-width: 700px) {
+  /* mobile general */
+  #home, #about-me, #projects, #skills, #contact {
+    padding-top: 5rem;
+  }
   /* #header, */
   #main,
   #contact {
     position: static;
     width: 100%;
   }
-  #header {
-    /* display: none; */
+  #header,
+  #header__content {
     height: 100vh; 
+  }
+  #header {
+    height: 4.8rem;
+    min-height: 0;
+    width: 100%;
     border-right: none;
     border-bottom: 1px solid black;
     background-color: blue;
-    width: .4rem;
     position: fixed;
     z-index: 10;
     padding-top: 0;
   }
   #header__content {
     display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  #user-profile {
+    margin-bottom: 1rem;
+  }
+  #user-profile img {
+    width: 280px;
   }
   #navbar {
     padding-top: 0;
@@ -325,34 +342,21 @@ h1, h2, h3, p, ul {
     cursor: pointer;
     display: inline-block;
     position: absolute;
-    bottom: 0;
-    height: 100px;
+    top: 0.3rem;
+    right: .4rem;
+    padding: 0;
+    border: 2px solid #fff;
     display: flex;
     align-items: center;
+    width: 4rem;
+    height: 4rem;
   }
-  #toggle-navbar.left {
-    left: .4rem;
-    padding: 0.4rem 0.8rem 0.4rem 0;
-    border-top: 2px solid #fff;
-    border-bottom: 2px solid #fff;
-    border-right: 2px solid #fff;
-    border-top-right-radius: 100px;
-    border-bottom-right-radius: 100px;
-    border-top-left-radius: 0;
-    border-bottom-left-radius: 0;
-  } 
-  #toggle-navbar.right {
-    right: 0;
-    justify-content: center;
-    padding: 0.4rem 0.4rem 0.4rem 0.8rem;
-    border-top: 2px solid #fff;
-    border-bottom: 2px solid #fff;
-    border-left: 2px solid #fff;
-    border-top-right-radius: 0;
-    border-bottom-right-radius: 0;
-    border-top-left-radius: 100px;
-    border-bottom-left-radius: 100px;
-  } 
+  /* #toggle-navbar.hidden {
+    
+  }
+  #toggle-navbar.show {
+    
+  } */
   #name {
     font-size: 4rem;
     line-height: 4rem;
@@ -377,7 +381,8 @@ h1, h2, h3, p, ul {
     padding-left: 2rem;
   }
   #contact {
-    height: auto;
+    display: grid;
+    place-content: center;
   }
   #contact .social-networks {
     padding-left: 0;

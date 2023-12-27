@@ -3,21 +3,23 @@ const header__content = document.getElementById("header__content");
 const header = document.getElementById("header");
 
 function showNavbar() {
-    header.style = "width: 100%";
-    header__content.style = "display:block;"
-    btnToggleNavbar.classList.remove("left");
-    btnToggleNavbar.textContent = "<";
-    btnToggleNavbar.classList.add("right");
+    header.style = "height: 100vh;";
+    header__content.style = "display:flex;"
+    btnToggleNavbar.classList.remove("hidden");
+    // btnToggleNavbar.textContent = "<";
+    btnToggleNavbar.classList.add("show");
 }
 function hiddenNavbar() {
-    header.style = "width: .4rem";
-    header__content.style = "display:none;"
-    btnToggleNavbar.classList.remove("right");
-    btnToggleNavbar.textContent = ">";
-    btnToggleNavbar.classList.add("left");
+    if(window.outerWidth <= 700) {
+        header.style = "height: 4.8rem;";
+        header__content.style = "display:none;";
+        btnToggleNavbar.classList.remove("show");
+        // btnToggleNavbar.textContent = ">";
+        btnToggleNavbar.classList.add("hidden");
+    }
 }
 function toggleNavbar() {
-    if (btnToggleNavbar.classList.contains("left")) 
+    if (btnToggleNavbar.classList.contains("hidden")) 
         showNavbar()
     else 
         hiddenNavbar();
