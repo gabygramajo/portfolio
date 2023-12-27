@@ -75,7 +75,10 @@ h1, h2, h3, p, ul {
   height: 100vh;
   min-height: 50rem;
 }
-
+/* user profile */
+#user-profile img {
+  border-radius: 50%;
+}
 /* home header */
 #header {
   width: 20%;
@@ -135,7 +138,13 @@ h1, h2, h3, p, ul {
   padding-top: 2%;
 }
 .my-prensentation {
+  max-width: 96%;
   margin-bottom: 2rem;
+}
+.my-prensentation__text {
+  font-size: 2.2rem;
+  line-height: 2.4rem;
+  margin-bottom: .8rem;
 }
 .training__title--1 {
   margin-top: 1.8rem;
