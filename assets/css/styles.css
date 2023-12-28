@@ -2,10 +2,9 @@
 :root {
   --header-bg: radial-gradient( circle farthest-corner at -4% -12.9%,  rgba(74,98,110,1) 0.3%, rgba(30,33,48,1) 90.2% );
   --main-bg: radial-gradient( circle farthest-corner at -4% -12.9%,  rgba(74,98,110,1) 0.3%, rgba(30,33,48,1) 90.2% );
-  /* --header-bg: radial-gradient( circle farthest-corner at -4% -12.9%,  rgba(74,98,110,1) 0.3%, rgba(30,33,48,1) 90.2% );
-  --main-bg: radial-gradient( circle farthest-corner at 10% 20%,  rgba(90,92,106,1) 0%, rgba(32,45,58,1) 81.3% ); */
-  /* --header-bg: radial-gradient( circle farthest-corner at 10% 20%,  rgba(90,92,106,1) 0%, rgba(32,45,58,1) 81.3% ) ;
-  --main-bg: radial-gradient( circle farthest-corner at -4% -12.9%,  rgba(74,98,110,1) 0.3%, rgba(30,33,48,1) 90.2% ); */
+  --primary-color: #FFE382;
+  --secundary-color: #F0DBAF;
+  --text-color: #d8d8d8;
 }
 /* global */
 html {
@@ -33,26 +32,45 @@ body {
   /* background-color: #092635; */
   background-image: var(--main-bg);
   color: #fff;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 h1 {
   font-size: 4rem;
+  color: #FAEED1;
 }
 h2 {
   font-size: 3.6rem;
+  color: var(--primary-color);
 }
 h3 {
-  font-size: 3rem;
+  color: var(--secundary-color);
+  font-size: 3.2rem;
+  font-weight: 400;
+  font-family: 'Open Sans', sans-serif;
+  letter-spacing: 1px;
+}
+h1, h2, h3 {
+  font-family: 'Teko', sans-serif;
+}
+h1, h2 {
+  font-weight: 500;
+  text-transform: uppercase;
+}
+h1, h2, h3, p, ul {
+  margin: 0;
+  padding: 0;
 }
 p,
 a,
 button,
 li {
+  font-family: 'Open Sans', sans-serif;
   font-size: 2.2rem;
+  font-weight: 400;
 }
-h1, h2, h3, p, ul {
-  margin: 0;
-  padding: 0;
+p, 
+li {
+  color: var(--text-color);
 }
 /* general styles */
 .btn {
@@ -63,6 +81,16 @@ h1, h2, h3, p, ul {
   border-radius: 1rem;
   cursor: pointer;
   color: #000;
+}
+.download-cv {
+  background-color: #161A30;
+  color: #FFE382;
+  border-color: #B6BBC4;
+  transition: all .6s ease-out;
+}
+.download-cv:hover {
+  background-color: #31304D;
+  border-color: #FFE382;
 }
 #toggle-navbar {
   display: none;
@@ -102,8 +130,14 @@ h1, h2, h3, p, ul {
   gap: 1.6rem;
 }
 .navbar__item {
+  font-family: 'Teko', sans-serif;
   font-size: 3rem;
+  font-weight: 400;
   text-transform: capitalize;
+  transition: all .2s ease-out;
+}
+.navbar__item:hover {
+  color: #FFE382;
 }
 /* user profile */
 #user-profile {
@@ -151,12 +185,20 @@ h1, h2, h3, p, ul {
   background-image: var(--header-bg);
 }
 #name {
-  font-size: 8rem;
+  text-transform: uppercase;
+  color: #FAEED1;
+  font-family: 'Teko', sans-serif;
+  font-weight: 500;
+  font-size: 10rem;
   line-height: 8rem;
   margin-bottom: 1.6rem;
 }
 #profession {
-  font-size: 5rem;
+  color: #FFE382;
+  font-family: 'Teko', sans-serif;
+  font-weight: 500;
+  font-style: italic;
+  font-size: 7rem;
   margin-bottom: 1.6rem;
 }
 .home__text {
@@ -187,7 +229,7 @@ h1, h2, h3, p, ul {
   margin-top: 1.8rem;
 }
 .training__title--2 {
-  font-size: 2.6rem;
+  font-size: 3rem;
   margin-top: 1rem;
 }
 .training {
@@ -220,9 +262,10 @@ h1, h2, h3, p, ul {
 .project {
   flex-basis: 26rem;
   flex-grow: 1;
-  background-color: #fbfbfb;
+  background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(90,92,106,1) 0%, rgba(32,45,58,1) 81.3% );
   color: #000;
   border-radius: 1rem;
+  border: 2px solid #F0DBAF;
   overflow: hidden;
   padding: .4rem;
 }
@@ -343,11 +386,7 @@ h1, h2, h3, p, ul {
   }
 }
 @media screen and (max-width: 700px) {
-  /* mobile general */
-  #home, #about-me, #projects, #skills, #contact {
-    padding-top: 5rem;
-  }
-  /* #header, */
+ /* #header, */
   #main,
   #contact {
     position: static;
@@ -378,12 +417,14 @@ h1, h2, h3, p, ul {
   #user-profile {
     margin-bottom: 1rem;
   }
-
   #user-profile img {
     width: 280px;
   }
   #navbar {
     padding-top: 0;
+  }
+  .navbar__item {
+    color: #FFE382;
   }
   #toggle-navbar {
     background-image: var(--main-bg);
@@ -413,6 +454,9 @@ h1, h2, h3, p, ul {
     padding-top: 7%;
     padding-left: 0;
     padding-right: 0;
+  }
+  #home, #about-me, #projects, #skills, #contact {
+    padding-top: 5rem;
   }
   #name {
     font-size: 4rem;
