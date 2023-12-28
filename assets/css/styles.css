@@ -1,3 +1,12 @@
+/* root */
+:root {
+  --header-bg: radial-gradient( circle farthest-corner at -4% -12.9%,  rgba(74,98,110,1) 0.3%, rgba(30,33,48,1) 90.2% );
+  --main-bg: radial-gradient( circle farthest-corner at -4% -12.9%,  rgba(74,98,110,1) 0.3%, rgba(30,33,48,1) 90.2% );
+  /* --header-bg: radial-gradient( circle farthest-corner at -4% -12.9%,  rgba(74,98,110,1) 0.3%, rgba(30,33,48,1) 90.2% );
+  --main-bg: radial-gradient( circle farthest-corner at 10% 20%,  rgba(90,92,106,1) 0%, rgba(32,45,58,1) 81.3% ); */
+  /* --header-bg: radial-gradient( circle farthest-corner at 10% 20%,  rgba(90,92,106,1) 0%, rgba(32,45,58,1) 81.3% ) ;
+  --main-bg: radial-gradient( circle farthest-corner at -4% -12.9%,  rgba(74,98,110,1) 0.3%, rgba(30,33,48,1) 90.2% ); */
+}
 /* global */
 html {
   box-sizing: border-box;
@@ -21,7 +30,8 @@ body {
   display: flex;
   flex-wrap: wrap;
   position: relative;
-  background-color: #092635;
+  /* background-color: #092635; */
+  background-image: var(--main-bg);
   color: #fff;
   font-family: 'Roboto', sans-serif;
 }
@@ -70,10 +80,30 @@ h1, h2, h3, p, ul {
   display: flex;
   gap: 2rem;
 }
+/* Header */
 #header,
 #contact {
   height: 100vh;
   min-height: 50rem;
+}
+#header {
+  background-image: var(--header-bg);
+  width: 20%;
+  min-width: 260px;
+  order: 1;
+  position: fixed;
+  text-align: center;
+  padding-top: 5%;
+}
+#navbar {
+  padding-top: 5%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+.navbar__item {
+  font-size: 3rem;
+  text-transform: capitalize;
 }
 /* user profile */
 #user-profile {
@@ -97,26 +127,6 @@ h1, h2, h3, p, ul {
   border-radius: 50%;
 
 }
-/* home header */
-#header {
-  width: 20%;
-  min-width: 260px;
-  order: 1;
-  position: fixed;
-  border-right: 1px solid black;
-  text-align: center;
-  padding-top: 5%;
-}
-#navbar {
-  padding-top: 5%;
-  display: flex;
-  flex-direction: column;
-  gap: 1.6rem;
-}
-.navbar__item {
-  font-size: 3rem;
-  text-transform: capitalize;
-}
 /* main */
 #main,
 #contact {
@@ -128,14 +138,17 @@ h1, h2, h3, p, ul {
   order: 2;
   position: relative;
   left: 20%;
-  padding: 7% 0 0 2%;
+  /* padding: 7% 0 0 2%; */
+  /* padding-left: 2%; */
 }
 
 /* home */
 #home {
   height: 100vh;
   min-height: 50rem;
-  padding-left: 5%;
+  padding-top: 12%;
+  padding-left: 7%;
+  background-image: var(--header-bg);
 }
 #name {
   font-size: 8rem;
@@ -153,9 +166,13 @@ h1, h2, h3, p, ul {
 #home .social-networks {
   margin-bottom: 2rem;
 }
+#home__footer {
+  position: relative;
+}
 /* about me */
 #about-me {
   padding-top: 2%;
+  padding-left: 2%;
 }
 .my-prensentation {
   max-width: 95%;
@@ -188,6 +205,7 @@ h1, h2, h3, p, ul {
 #contact,
 #skills {
   padding-top: 2%;
+  padding-left: 2%;
 }
 #projects {
   margin-bottom: 2rem;
@@ -368,7 +386,7 @@ h1, h2, h3, p, ul {
     padding-top: 0;
   }
   #toggle-navbar {
-    background-color: blue;
+    background-image: var(--main-bg);
     color: #fff;
     font-size: 3rem;
     text-transform: uppercase;
@@ -379,11 +397,11 @@ h1, h2, h3, p, ul {
     top: 0.3rem;
     right: .4rem;
     padding: 0;
-    border: 2px solid #fff;
     display: flex;
     align-items: center;
     width: 4rem;
     height: 4rem;
+    border-radius: .5rem;
   }
   /* #toggle-navbar.hidden {
     
@@ -391,6 +409,11 @@ h1, h2, h3, p, ul {
   #toggle-navbar.show {
     
   } */
+  #main {
+    padding-top: 7%;
+    padding-left: 0;
+    padding-right: 0;
+  }
   #name {
     font-size: 4rem;
     line-height: 4rem;
@@ -404,17 +427,36 @@ h1, h2, h3, p, ul {
   .btn {
     font-size: 2.2rem;
   }
-  #main {
-    padding: 7% 2% 0 2%;
+  .title-section {
+    margin-bottom: 1rem;
+  }
+  .my-prensentation__text {
+    font-size: 2rem;
+    line-height: 2.2rem;
+  }
+  .training__title--1 {
+    font-size: 2.8rem;
+  }
+  .training__title--2 {
+    font-size: 2.2rem;
   }
   .certification-lists {
     width: 90%;
-}
+  }
+  .certification-lists__item {
+    font-size: 1.8rem;
+  }
   .skills__container {
     padding-left: 2rem;
   }
+  #projects {
+    padding-left: 0;
+  }
+  #projects .title-section {
+    padding-left: 2%;
+  }
   .grid-projects {
-    padding: 0;
+    padding: 0 .8rem;
   }
   #contact {
     display: grid;
