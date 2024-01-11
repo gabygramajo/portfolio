@@ -309,11 +309,12 @@ li {
 .go-to__live-view,
 .go-to__github {
   color: #000;
+  background-color: #fff;
   border: 1px solid #000;
   border-radius: 1rem;
   font-size: 2rem;
   font-weight: bold;
-  padding: .4rem;
+  padding: .4rem .8rem;
 }
 .go-to__live-view:hover,
 .go-to__github:hover {
