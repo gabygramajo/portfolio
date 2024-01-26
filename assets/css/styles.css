@@ -108,6 +108,10 @@ li {
   display: flex;
   gap: 2rem;
 }
+.bold {
+  font-weight: bold;
+  color: #fff;
+}
 /* Header */
 #header,
 #contact {
@@ -215,6 +219,7 @@ li {
 #about-me {
   padding-top: 2%;
   padding-left: 2%;
+  background-image: var(--header-bg);
 }
 .my-prensentation {
   max-width: 95%;
