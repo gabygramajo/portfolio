@@ -112,6 +112,13 @@ li {
   font-weight: bold;
   color: #fff;
 }
+.icon-stacks {
+  width: 8rem;
+  height: 2.8rem;
+  object-fit: contain;
+  background:white; 
+  padding: 0.4rem;
+}
 /* Header */
 #header,
 #contact {
