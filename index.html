@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Portafolio Profesional</title>
+    <meta name="description" content="Portafolio profesional de desarrollador web">
+    
+    <!-- Fuente Inter de Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- CSS Modular -->
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/variables.css">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/components.css">
+    <link rel="stylesheet" href="./assets/css/sections.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+</head>
+<body>
+    <!-- Header / Navbar -->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <div class="nav__brand">
+                <a href="#home" class="nav__logo">Mi Portafolio</a>
+            </div>
+            
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link active">Inicio</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#about" class="nav__link">Sobre mí</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#skills" class="nav__link">Skills</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#projects" class="nav__link">Proyectos</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#certifications" class="nav__link">Certificaciones</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#contact" class="nav__link">Contacto</a>
+                    </li>
+                </ul>
+                
+                <div class="nav__close" id="nav-close">
+                    <i class="nav__close-icon">✕</i>
+                </div>
+            </div>
+            
+            <div class="nav__actions">
+                <button class="theme-toggle" id="theme-toggle" aria-label="Cambiar tema">
+                    <span class="theme-toggle__icon">🌙</span>
+                </button>
+                
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="nav__toggle-icon">☰</i>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main">
+        <!-- Hero Section -->
+        <section class="hero section" id="home">
+            <div class="hero__container container">
+                <div class="hero__content">
+                    <div class="hero__image">
+                        <img src="https://avatars.githubusercontent.com/u/77758104?s=400&u=0b552b739deb570d277d80e8f1c715b9389655ea&v=4" 
+                             alt="Foto profesional" class="hero__img">
+                    </div>
+                    
+                    <div class="hero__data">
+                        <h1 class="hero__title">
+                            Gabriel <span class="hero__name">Gramajo</span>
+                        </h1>
+                        <h2 class="hero__subtitle">Desarrollador Python</h2>
+                        <p class="hero__description">
+                            Especializado en crear experiencias web modernas y funcionales 
+                            con tecnologías de vanguardia. Apasionado por el código limpio 
+                            y las mejores prácticas de desarrollo.
+                        </p>
+                        
+                        <div class="hero__buttons">
+                            <a href="#contact" class="btn btn--primary">Contactar</a>
+                            <a href="#" class="btn btn--secondary" download>
+                                Descargar CV
+                            </a>
+                        </div>
+                        
+                        <div class="hero__social">
+                            <a href="https://github.com" class="hero__social-link" 
+                               target="_blank" rel="noopener noreferrer">
+                                <span class="hero__social-icon">📧</span>
+                            </a>
+                            <a href="https://linkedin.com" class="hero__social-link" 
+                               target="_blank" rel="noopener noreferrer">
+                                <span class="hero__social-icon">💼</span>
+                            </a>
+                            <a href="mailto:tu-email@gmail.com" class="hero__social-link">
+                                <span class="hero__social-icon">✉️</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="about section" id="about">
+            <div class="container">
+                <h2 class="section__title">Sobre mí</h2>
+                <p class="section__subtitle">Conoce más sobre mi experiencia y pasión por el desarrollo</p>
+                
+                <div class="about__container">
+                    <div class="about__card">
+                        <div class="about__card-icon">💻</div>
+                        <h3 class="about__card-title">Experiencia</h3>
+                        <p class="about__card-description">
+                            Más de 3 años desarrollando aplicaciones web modernas, 
+                            desde landing pages hasta sistemas complejos con bases de datos.
+                        </p>
+                    </div>
+                    
+                    <div class="about__card">
+                        <div class="about__card-icon">🎯</div>
+                        <h3 class="about__card-title">Enfoque</h3>
+                        <p class="about__card-description">
+                            Me especializo en crear soluciones eficientes y escalables, 
+                            priorizando la experiencia del usuario y el código limpio.
+                        </p>
+                    </div>
+                    
+                    <div class="about__card">
+                        <div class="about__card-icon">🚀</div>
+                        <h3 class="about__card-title">Objetivos</h3>
+                        <p class="about__card-description">
+                            Busco constantemente aprender nuevas tecnologías y contribuir 
+                            a proyectos que generen un impacto positivo.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section class="skills section" id="skills">
+            <div class="container">
+                <h2 class="section__title">Skills</h2>
+                <p class="section__subtitle">Tecnologías y herramientas que domino</p>
+                
+                <div class="skills__container" id="skills-container">
+                    <!-- Skills se cargan dinámicamente desde data/skills.js -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section class="projects section" id="projects">
+            <div class="container">
+                <h2 class="section__title">Proyectos</h2>
+                <p class="section__subtitle">Algunos de mis trabajos más destacados</p>
+                
+                <div class="projects__container" id="projects-container">
+                    <!-- Proyectos se cargan dinámicamente desde data/projects.js -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Certifications Section -->
+        <section class="certifications section" id="certifications">
+            <div class="container">
+                <h2 class="section__title">Certificaciones</h2>
+                <p class="section__subtitle">Formación y certificaciones profesionales</p>
+                
+                <div class="certifications__container" id="certifications-container">
+                    <!-- Certificaciones se cargan dinámicamente desde data/certifications.js -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact section" id="contact">
+            <div class="container">
+                <h2 class="section__title">Contacto</h2>
+                <p class="section__subtitle">¿Tienes un proyecto en mente? ¡Hablemos!</p>
+                
+                <div class="contact__container">
+                    <div class="contact__info">
+                        <div class="contact__card">
+                            <div class="contact__card-icon">📧</div>
+                            <h3 class="contact__card-title">Email</h3>
+                            <p class="contact__card-data">tu-email@gmail.com</p>
+                        </div>
+                        
+                        <div class="contact__card">
+                            <div class="contact__card-icon">📱</div>
+                            <h3 class="contact__card-title">Teléfono</h3>
+                            <p class="contact__card-data">+34 123 456 789</p>
+                        </div>
+                        
+                        <div class="contact__card">
+                            <div class="contact__card-icon">📍</div>
+                            <h3 class="contact__card-title">Ubicación</h3>
+                            <p class="contact__card-data">Buenos Aires,  Argentina</p>
+                        </div>
+                    </div>
+                    
+                    <form class="contact__form" id="contact-form">
+                        <div class="contact__form-group">
+                            <label for="name" class="contact__form-label">Nombre</label>
+                            <input type="text" id="name" name="name" class="contact__form-input" required>
+                            <span class="contact__form-error" id="name-error"></span>
+                        </div>
+                        
+                        <div class="contact__form-group">
+                            <label for="email" class="contact__form-label">Email</label>
+                            <input type="email" id="email" name="email" class="contact__form-input" required>
+                            <span class="contact__form-error" id="email-error"></span>
+                        </div>
+                        
+                        <div class="contact__form-group">
+                            <label for="message" class="contact__form-label">Mensaje</label>
+                            <textarea id="message" name="message" class="contact__form-textarea" 
+                                      rows="5" required></textarea>
+                            <span class="contact__form-error" id="message-error"></span>
+                        </div>
+                        
+                        <button type="submit" class="btn btn--primary contact__form-button">
+                            Enviar Mensaje
+                        </button>
+                        
+                        <div class="contact__form-message" id="form-message"></div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <p class="footer__copy">
+                    © 2025 Desarrollador. Todos los derechos reservados.
+                </p>
+                
+                <div class="footer__links">
+                    <a href="#home" class="footer__link">Inicio</a>
+                    <a href="#about" class="footer__link">Sobre mí</a>
+                    <a href="#projects" class="footer__link">Proyectos</a>
+                    <a href="#contact" class="footer__link">Contacto</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript Modular -->
+    <script src="./data/skills.js"></script>
+    <script src="./data/projects.js"></script>
+    <script src="./data/certifications.js"></script>
+    <script src="./assets/js/theme.js"></script>
+    <script src="./assets/js/navbar.js"></script>
+    <script src="./assets/js/scroll.js"></script>
+    <script src="./assets/js/form.js"></script>
+    <script src="./assets/js/main.js"></script>
+</body>
+</html>
