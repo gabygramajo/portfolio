@@ -3,6 +3,22 @@
 
 const skillsData = [
     {
+        name: "Python",
+        icon: "🐍"
+    },
+    {
+        name: "SQL",
+        icon: "🐘"
+    },
+    {
+        name: "Excel",
+        icon: "📊"
+    },
+    {
+        name: "Git",
+        icon: "📝"
+    },
+    {
         name: "HTML5",
         icon: "🌐"
     },
@@ -15,40 +31,12 @@ const skillsData = [
         icon: "⚡"
     },
     {
-        name: "React",
-        icon: "⚛️"
-    },
-    {
-        name: "Node.js",
-        icon: "🟢"
-    },
-    {
-        name: "Python",
-        icon: "🐍"
-    },
-    {
-        name: "Git",
-        icon: "📝"
-    },
-    {
-        name: "MongoDB",
-        icon: "🍃"
-    },
-    {
-        name: "PostgreSQL",
-        icon: "🐘"
-    },
-    {
-        name: "Docker",
-        icon: "🐳"
-    },
-    {
         name: "AWS",
         icon: "☁️"
     },
     {
-        name: "TypeScript",
-        icon: "📘"
+        name: "Linux",
+        icon: "🐧"
     }
 ];
 

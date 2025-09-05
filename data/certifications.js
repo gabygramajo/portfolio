@@ -2,18 +2,18 @@
 // Para agregar una nueva certificación, simplemente añade un objeto al array
 
 const certificationsData = [
-    {
-        title: "JavaScript Algorithms and Data Structures",
-        institution: "freeCodeCamp",
-        logo: "🏆",
-        certificateUrl: "https://freecodecamp.org/certification/tu-usuario/javascript-algorithms-and-data-structures"
-    },
-    {
-        title: "Responsive Web Design",
-        institution: "freeCodeCamp",
-        logo: "📱",
-        certificateUrl: "https://freecodecamp.org/certification/tu-usuario/responsive-web-design"
-    },
+    // {
+    //     title: "JavaScript Algorithms and Data Structures",
+    //     institution: "freeCodeCamp",
+    //     logo: "🏆",
+    //     certificateUrl: "https://freecodecamp.org/certification/tu-usuario/javascript-algorithms-and-data-structures"
+    // },
+    // {
+    //     title: "Responsive Web Design",
+    //     institution: "freeCodeCamp",
+    //     logo: "📱",
+    //     certificateUrl: "https://freecodecamp.org/certification/tu-usuario/responsive-web-design"
+    // },
     {
         title: "AWS Cloud Practitioner",
         institution: "Amazon Web Services",
@@ -21,23 +21,23 @@ const certificationsData = [
         certificateUrl: "https://aws.amazon.com/certification/certified-cloud-practitioner/"
     },
     {
-        title: "Google Analytics Certified",
+        title: "IT Support Professional",
         institution: "Google",
-        logo: "📊",
+        logo: "💻",
         certificateUrl: "https://skillshop.exceedlms.com/student/catalog/list?category_ids=53-google-analytics-4"
     },
     {
-        title: "Meta Front-End Developer",
-        institution: "Meta (Facebook)",
+        title: "IT Essentials",
+        institution: "Cisco",
         logo: "💻",
         certificateUrl: "https://www.coursera.org/professional-certificates/meta-front-end-developer"
     },
-    {
-        title: "MongoDB Developer",
-        institution: "MongoDB University",
-        logo: "🍃",
-        certificateUrl: "https://university.mongodb.com/"
-    }
+    // {
+    //     title: "MongoDB Developer",
+    //     institution: "MongoDB University",
+    //     logo: "🍃",
+    //     certificateUrl: "https://university.mongodb.com/"
+    // }
 ];
 
 // Función para renderizar certificaciones
