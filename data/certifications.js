@@ -18,19 +18,19 @@ const certificationsData = [
         title: "AWS Cloud Practitioner",
         institution: "Amazon Web Services",
         logo: "☁️",
-        certificateUrl: "https://aws.amazon.com/certification/certified-cloud-practitioner/"
+        certificateUrl: "https://www.credly.com/users/gabriel-omar-gramajo/badges#credly"
     },
     {
         title: "IT Support Professional",
         institution: "Google",
         logo: "💻",
-        certificateUrl: "https://skillshop.exceedlms.com/student/catalog/list?category_ids=53-google-analytics-4"
+        certificateUrl: "https://www.credly.com/users/gabriel-omar-gramajo/badges#credly"
     },
     {
         title: "IT Essentials",
         institution: "Cisco",
         logo: "💻",
-        certificateUrl: "https://www.coursera.org/professional-certificates/meta-front-end-developer"
+        certificateUrl: "https://www.credly.com/users/gabriel-omar-gramajo/badges#credly"
     },
     // {
     //     title: "MongoDB Developer",

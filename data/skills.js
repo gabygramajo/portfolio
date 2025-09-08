@@ -4,39 +4,39 @@
 const skillsData = [
     {
         name: "Python",
-        icon: "🐍"
+        icon: "<i class=\"fa-brands fa-python\"></i>"
     },
     {
         name: "SQL",
-        icon: "🐘"
+        icon: "<i class=\"fa-solid fa-database\"></i>"
     },
     {
         name: "Excel",
-        icon: "📊"
+        icon: "<i class=\"fa-solid fa-file-excel\"></i>"
     },
     {
         name: "Git",
-        icon: "📝"
+        icon: "<i class=\"fa-brands fa-square-git\"></i>"
     },
     {
         name: "HTML5",
-        icon: "🌐"
+        icon: "<i class=\"fa-brands fa-html5\"></i>"
     },
     {
         name: "CSS3",
-        icon: "🎨"
+        icon: "<i class=\"fa-brands fa-css3-alt\"></i>"
     },
     {
         name: "JavaScript",
-        icon: "⚡"
+        icon: "<i class=\"fa-brands fa-js\"></i>"
     },
     {
         name: "AWS",
-        icon: "☁️"
+        icon: "<i class=\"fa-brands fa-aws\"></i>"
     },
     {
         name: "Linux",
-        icon: "🐧"
+        icon: "<i class=\"fa-brands fa-linux\"></i>"
     }
 ];
 
