@@ -18,22 +18,6 @@ const projectsData = [
         githubUrl: "https://github.com/tu-usuario/dashboard-analytics",
         demoUrl: "https://tu-dashboard-demo.netlify.app"
     },
-    {
-        title: "App de Gestión de Tareas",
-        description: "Aplicación web para gestión de proyectos y tareas con funcionalidades de colaboración en equipo, notificaciones y seguimiento de progreso.",
-        image: "https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=600",
-        technologies: ["JavaScript", "Firebase", "CSS Grid", "PWA"],
-        githubUrl: "https://github.com/tu-usuario/task-manager",
-        demoUrl: "https://tu-taskmanager-demo.netlify.app"
-    },
-    {
-        title: "Portfolio Interactivo",
-        description: "Sitio web portfolio con animaciones avanzadas, modo oscuro/claro, formulario de contacto funcional y optimización completa para dispositivos móviles.",
-        image: "https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=600",
-        technologies: ["HTML5", "CSS3", "JavaScript", "EmailJS"],
-        githubUrl: "https://github.com/tu-usuario/interactive-portfolio",
-        demoUrl: "https://tu-portfolio-demo.netlify.app"
-    }
 ];
 
 // Función para renderizar proyectos

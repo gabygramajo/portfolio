@@ -35,14 +35,14 @@
                     <li class="nav__item">
                         <a href="#home" class="nav__link active">Inicio</a>
                     </li>
-                    <!-- <li class="nav__item">
-                        <a href="#about" class="nav__link">Sobre mí</a>
-                    </li> -->
-                    <li class="nav__item">
-                        <a href="#skills" class="nav__link">Skills</a>
-                    </li>
                     <li class="nav__item">
                         <a href="#projects" class="nav__link">Proyectos</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#about" class="nav__link">Sobre mí</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#skills" class="nav__link">Skills</a>
                     </li>
                     <li class="nav__item">
                         <a href="#certifications" class="nav__link">Certificaciones</a>
@@ -86,7 +86,7 @@
                         </h1>
                         <h2 class="hero__subtitle">Desarrollador Python y Data Analyst</h2>
                         <p class="hero__description">
-                            Me apasiona el mundo de los datos y cómo pueden transformar ideas en soluciones reales. Como Data Analyst en formación, disfruto trabajar con SQL, Python y herramientas de visualización para dar sentido a la información y ayudar a tomar decisiones basadas en datos. 
+                            Apasionado por el mundo de los datos y en formación como Data Analyst, busco descubrir patrones, generar insights y convertir la información en conocimiento útil para la toma de decisiones estratégicas. 
                         </p>
                         
                         <div class="hero__buttons">
@@ -120,13 +120,25 @@
             </div>
         </section>
 
-        <!-- About Section -->
-        <!-- <section class="about section" id="about">
+        <!-- Projects Section -->
+        <section class="projects section" id="projects">
+            <div class="container">
+                <h2 class="section__title">Proyectos</h2>
+                <p class="section__subtitle">Algunos de mis trabajos más destacados</p>
+                
+                <div class="projects__container" id="projects-container">
+                    <!-- Proyectos se cargan dinámicamente desde data/projects.js -->
+                </div>
+            </div>
+        </section>
+
+         <!-- About Section -->
+        <section class="about section" id="about">
             <div class="container">
                 <h2 class="section__title">Sobre mí</h2>
-                <p class="section__subtitle">Conoce más sobre mi experiencia y pasión por el desarrollo</p>
+                <!-- <p class="section__subtitle">Conoce más sobre mi experiencia y pasión por el desarrollo</p> -->
                 
-                <div class="about__container">
+                <!-- <div class="about__container">
                     <div class="about__card">
                         <div class="about__card-icon">💻</div>
                         <h3 class="about__card-title">Experiencia</h3>
@@ -134,28 +146,28 @@
                             Más de 3 años desarrollando aplicaciones web modernas, 
                             desde landing pages hasta sistemas complejos con bases de datos.
                         </p>
-                    </div>
+                    </div> -->
                     
                     <div class="about__card">
-                        <div class="about__card-icon">🎯</div>
-                        <h3 class="about__card-title">Enfoque</h3>
-                        <p class="about__card-description">
-                            Me especializo en crear soluciones eficientes y escalables, 
-                            priorizando la experiencia del usuario y el código limpio.
+                        <p class="about__card-description about__card-title">
+                            Soy estudiante de Licenciatura en Informática, enfocado en la gestión, análisis y visualización de datos.
+                        </p>
+                        <p class="about__card-description about__card-title">
+                            Mi objetivo es crecer profesionalmente como Analista de Datos, trabajar en equipos multidisciplinarios y aportar valor mediante informes, dashboards y soluciones basadas en datos que faciliten la toma de decisiones.
                         </p>
                     </div>
                     
-                    <div class="about__card">
+                    <!-- <div class="about__card">
                         <div class="about__card-icon">🚀</div>
                         <h3 class="about__card-title">Objetivos</h3>
                         <p class="about__card-description">
                             Busco constantemente aprender nuevas tecnologías y contribuir 
                             a proyectos que generen un impacto positivo.
                         </p>
-                    </div>
+                    </div> -->
                 </div>
             </div>
-        </section> -->
+        </section>
 
         <!-- Skills Section -->
         <section class="skills section" id="skills">
@@ -165,18 +177,6 @@
                 
                 <div class="skills__container" id="skills-container">
                     <!-- Skills se cargan dinámicamente desde data/skills.js -->
-                </div>
-            </div>
-        </section>
-
-        <!-- Projects Section -->
-        <section class="projects section" id="projects">
-            <div class="container">
-                <h2 class="section__title">Proyectos</h2>
-                <p class="section__subtitle">Algunos de mis trabajos más destacados</p>
-                
-                <div class="projects__container" id="projects-container">
-                    <!-- Proyectos se cargan dinámicamente desde data/projects.js -->
                 </div>
             </div>
         </section>
@@ -261,8 +261,8 @@
                 
                 <div class="footer__links">
                     <a href="#home" class="footer__link">Inicio</a>
-                    <!-- <a href="#about" class="footer__link">Sobre mí</a> -->
                     <a href="#projects" class="footer__link">Proyectos</a>
+                    <a href="#about" class="footer__link">Sobre mí</a>
                     <a href="#contact" class="footer__link">Contacto</a>
                 </div>
             </div>

@@ -135,6 +135,7 @@
 .about__card-description {
     color: var(--text-color-light);
     line-height: var(--line-height-relaxed);
+    font-size: var(--font-size-lg);
 }
 
 /* Skills Section */
