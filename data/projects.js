@@ -3,21 +3,21 @@
 
 const projectsData = [
     {
-        title: "E-commerce Moderno",
-        description: "Plataforma de comercio electrónico completa con carrito de compras, sistema de pagos y panel de administración. Diseño responsive y optimizado para SEO.",
-        image: "https://images.pexels.com/photos/230544/pexels-photo-230544.jpeg?auto=compress&cs=tinysrgb&w=600",
-        technologies: ["React", "Node.js", "MongoDB", "Stripe"],
-        githubUrl: "https://github.com/tu-usuario/ecommerce-project",
-        demoUrl: "https://tu-ecommerce-demo.netlify.app"
+        title: "Dashboard de Ventas Globales",
+        description: "Dashboard interactivo en Power BI para analizar las ventas mensuales, tendencias de productos y rendimiento de sucursales en distintas regiones, con KPIs dinámicos y filtros personalizados.",
+        image: "https://images.pexels.com/photos/669619/pexels-photo-669619.jpeg?auto=compress&cs=tinysrgb&w=600",
+        technologies: ["Power BI", "SQL", "Excel", "DAX"],
+        githubUrl: "https://github.com/tu-usuario/dashboard-ventas-globales",
+        demoUrl: "https://tu-dashboard-ventas-demo.netlify.app"
     },
     {
-        title: "Dashboard Analytics",
-        description: "Dashboard interactivo para visualización de datos con gráficos en tiempo real, filtros avanzados y exportación de reportes en múltiples formatos.",
-        image: "https://images.pexels.com/photos/590020/pexels-photo-590020.jpeg?auto=compress&cs=tinysrgb&w=600",
-        technologies: ["Vue.js", "D3.js", "Express", "PostgreSQL"],
-        githubUrl: "https://github.com/tu-usuario/dashboard-analytics",
-        demoUrl: "https://tu-dashboard-demo.netlify.app"
-    },
+        title: "Dashboard de Recursos Humanos",
+        description: "Dashboard interactivo que analiza métricas clave de empleados, como rotación, ausentismo, antigüedad y desempeño, proporcionando visualizaciones dinámicas y reportes automáticos.",
+        image: "https://images.pexels.com/photos/3184292/pexels-photo-3184292.jpeg?auto=compress&cs=tinysrgb&w=600",
+        technologies: ["Power BI", "SQL", "Excel"],
+        githubUrl: "https://github.com/tu-usuario/dashboard-recursos-humanos",
+        demoUrl: "https://tu-dashboard-rh-demo.netlify.app"
+    }
 ];
 
 // Función para renderizar proyectos

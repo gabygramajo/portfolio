@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Portafolio Profesional</title>
-    <meta name="description" content="Portafolio profesional de desarrollador web">
+    <title>Gabriel Gramajo - Python Data Developer</title>
+    <meta name="description" content="Hola, soy Gabriel. Data Analyst y Python Developer.">
     
     <!-- Fuente Inter de Google Fonts -->
     <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -36,13 +36,13 @@
                         <a href="#home" class="nav__link active">Inicio</a>
                     </li>
                     <li class="nav__item">
-                        <a href="#projects" class="nav__link">Proyectos</a>
-                    </li>
-                    <li class="nav__item">
                         <a href="#about" class="nav__link">Sobre mí</a>
                     </li>
                     <li class="nav__item">
                         <a href="#skills" class="nav__link">Skills</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#projects" class="nav__link">Proyectos</a>
                     </li>
                     <li class="nav__item">
                         <a href="#certifications" class="nav__link">Certificaciones</a>
@@ -91,7 +91,7 @@
                         
                         <div class="hero__buttons">
                             <a href="#contact" class="btn btn--primary">Contactar</a>
-                            <a href="#" class="btn btn--secondary" download>
+                            <a href="https://drive.google.com/file/d/1kmqu1OWrtBxoVT1gsdogmFOTVDJOfkga/view?usp=sharing" class="btn btn--secondary" rel="noopener" target="_blank" >
                                 Descargar CV
                             </a>
                         </div>
@@ -120,33 +120,11 @@
             </div>
         </section>
 
-        <!-- Projects Section -->
-        <section class="projects section" id="projects">
-            <div class="container">
-                <h2 class="section__title">Proyectos</h2>
-                <p class="section__subtitle">Algunos de mis trabajos más destacados</p>
-                
-                <div class="projects__container" id="projects-container">
-                    <!-- Proyectos se cargan dinámicamente desde data/projects.js -->
-                </div>
-            </div>
-        </section>
 
          <!-- About Section -->
         <section class="about section" id="about">
             <div class="container">
                 <h2 class="section__title">Sobre mí</h2>
-                <!-- <p class="section__subtitle">Conoce más sobre mi experiencia y pasión por el desarrollo</p> -->
-                
-                <!-- <div class="about__container">
-                    <div class="about__card">
-                        <div class="about__card-icon">💻</div>
-                        <h3 class="about__card-title">Experiencia</h3>
-                        <p class="about__card-description">
-                            Más de 3 años desarrollando aplicaciones web modernas, 
-                            desde landing pages hasta sistemas complejos con bases de datos.
-                        </p>
-                    </div> -->
                     
                     <div class="about__card">
                         <p class="about__card-description about__card-title">
@@ -156,15 +134,7 @@
                             Mi objetivo es crecer profesionalmente como Analista de Datos, trabajar en equipos multidisciplinarios y aportar valor mediante informes, dashboards y soluciones basadas en datos que faciliten la toma de decisiones.
                         </p>
                     </div>
-                    
-                    <!-- <div class="about__card">
-                        <div class="about__card-icon">🚀</div>
-                        <h3 class="about__card-title">Objetivos</h3>
-                        <p class="about__card-description">
-                            Busco constantemente aprender nuevas tecnologías y contribuir 
-                            a proyectos que generen un impacto positivo.
-                        </p>
-                    </div> -->
+
                 </div>
             </div>
         </section>
@@ -177,6 +147,18 @@
                 
                 <div class="skills__container" id="skills-container">
                     <!-- Skills se cargan dinámicamente desde data/skills.js -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section class="projects section" id="projects">
+            <div class="container">
+                <h2 class="section__title">Proyectos</h2>
+                <p class="section__subtitle">Algunos de mis trabajos más destacados</p>
+                
+                <div class="projects__container" id="projects-container">
+                    <!-- Proyectos se cargan dinámicamente desde data/projects.js -->
                 </div>
             </div>
         </section>
@@ -202,19 +184,25 @@
                 <div class="contact__container">
                     <div class="contact__info">
                         <div class="contact__card">
-                            <div class="contact__card-icon">📧</div>
+                            <div class="contact__card-icon">
+                                <i class="fa-solid fa-envelope"></i>
+                            </div>
                             <h3 class="contact__card-title">Email</h3>
                             <p class="contact__card-data">tu-email@gmail.com</p>
                         </div>
                         
                         <div class="contact__card">
-                            <div class="contact__card-icon">📱</div>
+                            <div class="contact__card-icon">
+                                <i class="fa-brands fa-square-whatsapp"></i>
+                            </div>
                             <h3 class="contact__card-title">Teléfono</h3>
                             <p class="contact__card-data">+34 123 456 789</p>
                         </div>
                         
                         <div class="contact__card">
-                            <div class="contact__card-icon">📍</div>
+                            <div class="contact__card-icon">
+                                <i class="fa-solid fa-location-dot"></i>
+                            </div>
                             <h3 class="contact__card-title">Ubicación</h3>
                             <p class="contact__card-data">Buenos Aires,  Argentina</p>
                         </div>

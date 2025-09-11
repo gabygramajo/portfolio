@@ -15,8 +15,16 @@ const skillsData = [
         icon: "<i class=\"fa-solid fa-file-excel\"></i>"
     },
     {
-        name: "Git",
-        icon: "<i class=\"fa-brands fa-square-git\"></i>"
+        name: "AWS",
+        icon: "<i class=\"fa-brands fa-aws\"></i>"
+    },
+    {
+        name: "Linux",
+        icon: "<i class=\"fa-brands fa-linux\"></i>"
+    },
+    {
+        name: "JavaScript",
+        icon: "<i class=\"fa-brands fa-js\"></i>"
     },
     {
         name: "HTML5",
@@ -27,17 +35,9 @@ const skillsData = [
         icon: "<i class=\"fa-brands fa-css3-alt\"></i>"
     },
     {
-        name: "JavaScript",
-        icon: "<i class=\"fa-brands fa-js\"></i>"
+        name: "Git",
+        icon: "<i class=\"fa-brands fa-square-git\"></i>"
     },
-    {
-        name: "AWS",
-        icon: "<i class=\"fa-brands fa-aws\"></i>"
-    },
-    {
-        name: "Linux",
-        icon: "<i class=\"fa-brands fa-linux\"></i>"
-    }
 ];
 
 // Función para renderizar skills
