@@ -6,8 +6,12 @@
         padding: 0 var(--space-lg);
     }
     
+    .hero.section {
+        padding: var(--space-4xl) 0;
+    }
+    
     .section {
-        padding: var(--space-3xl) 0;
+        padding: var(--space-md) 0;
     }
     
     .section__title {
@@ -57,11 +61,16 @@
     }
     
     .hero__image {
-        order: 1;
+        display: none;
     }
     
     .hero__data {
-        order: 2;
+        order: 1;
+    }
+
+    .hero__description {
+        margin: 0 auto;
+        margin-bottom: var(--space-md);
     }
     
     .hero__img {

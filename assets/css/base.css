@@ -6,8 +6,13 @@
     padding: 0 var(--space-md);
 }
 
-.section {
+.hero.section {
     padding: var(--space-4xl) 0;
+}
+
+.section {
+    padding: var(--space-md) 0;
+    min-height: 100vh
 }
 
 .section__title {
