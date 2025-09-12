@@ -119,6 +119,16 @@
     box-shadow: var(--shadow-lg);
 }
 
+.about__image {
+    display: flex;
+    justify-content: center;
+    order: 1;
+}
+
+.about__card-container {
+    order: 2;
+}
+
 .about__card-icon {
     font-size: var(--font-size-4xl);
     margin-bottom: var(--space-lg);
@@ -136,6 +146,7 @@
     color: var(--text-color-light);
     line-height: var(--line-height-relaxed);
     font-size: var(--font-size-lg);
+    text-align: left;
 }
 
 /* Skills Section */
