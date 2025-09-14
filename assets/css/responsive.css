@@ -85,12 +85,13 @@
     .hero__buttons {
         justify-content: center;
         flex-wrap: wrap;
+        margin-bottom: var(--space-md);
     }
     
     .hero__social {
         justify-content: center;
     }
-    
+
     /* About responsive */
     .about__container {
         grid-template-columns: 1fr;
@@ -177,6 +178,23 @@
     .nav__menu.show {
         right: 0;
     }
+
+    .linkedin {
+        order: 2;
+    }
+
+    .mail {
+        order: 1;
+    }
+}
+
+/* Desktop medio - 1200px */
+@media screen and (max-width: 1200px) {
+
+    .hero__title {
+        font-size: var(--font-size-5xl);
+    }
+
 }
 
 /* Desktop grande - 1200px+ */
@@ -187,7 +205,7 @@
     }
     
     .hero__title {
-        font-size: var(--font-size-5xl);
+        font-size: var(--font-size-6xl);
     }
     
     .skills__container {

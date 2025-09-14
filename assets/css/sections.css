@@ -11,12 +11,16 @@
 
 .hero__container {
     width: 100%;
+    display: flex;
+    justify-content: center;
 }
 
 .hero__content {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    /* grid-template-columns: 1fr 1fr; */
+    grid-template-columns: 1fr;
     gap: var(--space-4xl);
+    max-width: 700px;
     align-items: center;
 }
 
@@ -44,6 +48,7 @@
     font-weight: var(--font-weight-bold);
     margin-bottom: var(--space-md);
     line-height: var(--line-height-tight);
+    text-align: center;
 }
 
 .hero__name {
@@ -51,10 +56,11 @@
 }
 
 .hero__subtitle {
-    font-size: var(--font-size-xl);
+    font-size: var(--font-size-3xl);
     color: var(--text-color-light);
     margin-bottom: var(--space-lg);
-    font-weight: var(--font-weight-medium);
+    font-weight: var(--font-weight-bold);
+    text-align: center;
 }
 
 .hero__description {
@@ -62,22 +68,47 @@
     color: var(--text-color-light);
     margin-bottom: var(--space-2xl);
     line-height: var(--line-height-relaxed);
-    max-width: 500px;
+    text-align: center;
 }
 
 .hero__buttons {
     display: flex;
+    justify-content: center;
     gap: var(--space-lg);
     margin-bottom: var(--space-2xl);
 }
 
 .hero__social {
     display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
     gap: var(--space-md);
 }
 
+.hero__social-title {
+    width: 100%;
+    font-size: var(--font-size-xl);
+    color: var(--text-color-light);
+    /* margin-bottom: var(--space-xs); */
+    font-weight: var(--font-weight-semibold);
+    text-align: center;
+}
+
+.linkedin {
+    order: 1;
+}
+
+.mail {
+    order: 2;
+}
+
+.github {
+    order: 3;
+}
+
 .hero__social-link {
-    width: 48px;
+    /* width: 48px; */
+    padding: 4px 16px;
     height: 48px;
     background-color: var(--bg-color-alt);
     border-radius: var(--border-radius-full);
@@ -86,6 +117,7 @@
     justify-content: center;
     transition: all var(--transition-duration) var(--transition-timing);
     border: 1px solid var(--border-color);
+    cursor: pointer;
 }
 
 .hero__social-link:hover {
@@ -95,7 +127,16 @@
 }
 
 .hero__social-icon {
+    display: flex;
+    align-items: center;
     font-size: var(--font-size-xl);
+}
+
+.hero__social-icon i {
+    margin-right: 6px;
+}
+.hero__social-text {
+    font-size: var(--font-size-normal);
 }
 
 /* About Section */
