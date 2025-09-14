@@ -11,6 +11,9 @@ class PortfolioApp {
             // Esperar a que el DOM esté completamente cargado
             await this.waitForDOM();
             
+            // Configurar funcionalidad del portafolio
+            this.setupPortfolioFunctionality();
+
             // Renderizar contenido dinámico
             this.renderDynamicContent();
             
@@ -38,6 +41,41 @@ class PortfolioApp {
                 resolve();
             }
         });
+    }
+
+    setupPortfolioFunctionality() {
+        // Configurar la funcionalidad de copiar el correo
+        this.setupSocialLinks();
+    }
+
+    // Método para manejar la interacción con los enlaces sociales
+    setupSocialLinks() {
+        const emailContainer = document.querySelector('.hero__social-link[title="Copiar Mail"]');
+
+        if (emailContainer) {
+            emailContainer.addEventListener('click', async () => {
+                const emailTextElement = emailContainer.querySelector('.hero__social-text');
+                if (!emailTextElement) return;
+
+                const email = emailTextElement.textContent.trim();
+                
+                try {
+                    await navigator.clipboard.writeText(email);
+                    this.announce('Correo electrónico copiado al portapapeles.');
+
+                    // Feedback visual al usuario
+                    const originalTitle = emailContainer.getAttribute('title');
+                    emailContainer.setAttribute('title', '¡Copiado!');
+                    setTimeout(() => {
+                        emailContainer.setAttribute('title', originalTitle);
+                    }, 2000);
+
+                } catch (err) {
+                    console.error('Error al intentar copiar el correo:', err);
+                    this.announce('Error al intentar copiar el correo.');
+                }
+            });
+        }
     }
     
     renderDynamicContent() {
