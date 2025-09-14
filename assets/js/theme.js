@@ -4,7 +4,7 @@ class ThemeManager {
     constructor() {
         this.themeToggle = document.getElementById('theme-toggle');
         this.themeIcon = document.querySelector('.theme-toggle__icon');
-        this.currentTheme = localStorage.getItem('theme') || 'light';
+        this.currentTheme = localStorage.getItem('theme') || 'dark';
         
         this.init();
     }
