@@ -79,9 +79,19 @@ class PortfolioApp {
     }
     
     renderDynamicContent() {
+        // Renderizar carrusel
+        if (typeof renderCarousel === 'function') {
+            renderCarousel();
+        }
+        
         // Renderizar skills
         if (typeof renderSkills === 'function') {
             renderSkills();
+        }
+        
+        // Renderizar experiencia
+        if (typeof renderExperience === 'function') {
+            renderExperience();
         }
         
         // Renderizar proyectos
@@ -89,7 +99,12 @@ class PortfolioApp {
             renderProjects();
         }
         
-        // Renderizar certificaciones
+        // Renderizar estudios universitarios
+        if (typeof renderUniversityStudies === 'function') {
+            renderUniversityStudies();
+        }
+        
+        // Renderizar certificaciones  
         if (typeof renderCertifications === 'function') {
             renderCertifications();
         }

@@ -1,60 +1,98 @@
-// Datos de skills - Fácil de modificar
-// Para agregar un nuevo skill, simplemente añade un objeto al array
+// Datos de skills agrupados - Fácil de modificar
+// Para agregar un nuevo skill, simplemente añade un objeto al array correspondiente
 
-const skillsData = [
-    {
-        name: "Python",
-        icon: "<i class=\"fa-brands fa-python\"></i>"
-    },
-    {
-        name: "SQL",
-        icon: "<i class=\"fa-solid fa-database\"></i>"
-    },
-    {
-        name: "Excel",
-        icon: "<i class=\"fa-solid fa-file-excel\"></i>"
-    },
-    {
-        name: "AWS",
-        icon: "<i class=\"fa-brands fa-aws\"></i>"
-    },
-    {
-        name: "Linux",
-        icon: "<i class=\"fa-brands fa-linux\"></i>"
-    },
-    {
-        name: "JavaScript",
-        icon: "<i class=\"fa-brands fa-js\"></i>"
-    },
-    {
-        name: "HTML5",
-        icon: "<i class=\"fa-brands fa-html5\"></i>"
-    },
-    {
-        name: "CSS3",
-        icon: "<i class=\"fa-brands fa-css3-alt\"></i>"
-    },
-    {
-        name: "Git",
-        icon: "<i class=\"fa-brands fa-square-git\"></i>"
-    },
-];
+const skillsGroupedData = {
+    "Lenguajes & Análisis": [
+        {
+            name: "SQL",
+            icon: "<i class=\"fa-solid fa-database\"></i>"
+        },
+        {
+            name: "Python",
+            icon: "<i class=\"fa-brands fa-python\"></i>"
+        },
+        {
+            name: "Pandas",
+            icon: "<i class=\"fa-solid fa-table\"></i>"
+        },
+        {
+            name: "NumPy",
+            icon: "<i class=\"fa-solid fa-calculator\"></i>"
+        },
+        {
+            name: "Matplotlib",
+            icon: "<i class=\"fa-solid fa-chart-line\"></i>"
+        }
+    ],
+    "Visualización & BI": [
+        {
+            name: "Power BI",
+            icon: "<i class=\"fa-solid fa-chart-bar\"></i>"
+        }
+    ],
+    "Hojas de Cálculo": [
+        {
+            name: "Excel",
+            icon: "<i class=\"fa-solid fa-file-excel\"></i>"
+        },
+        {
+            name: "Google Sheets",
+            icon: "<i class=\"fa-brands fa-google\"></i>"
+        }
+    ],
+    "Cloud": [
+        {
+            name: "AWS",
+            icon: "<i class=\"fa-brands fa-aws\"></i>"
+        }
+    ],
+    "Control de Versiones": [
+        {
+            name: "Git",
+            icon: "<i class=\"fa-brands fa-git-alt\"></i>"
+        },
+        {
+            name: "GitHub",
+            icon: "<i class=\"fa-brands fa-github\"></i>"
+        }
+    ]
+};
 
-// Función para renderizar skills
+// Función para renderizar skills agrupados
 function renderSkills() {
     const skillsContainer = document.getElementById('skills-container');
     
     if (!skillsContainer) return;
     
-    skillsContainer.innerHTML = skillsData.map(skill => `
-        <div class="skill-card fade-in">
-            <span class="skill-card__icon">${skill.icon}</span>
-            <h3 class="skill-card__name">${skill.name}</h3>
+    const groupsArray = Object.entries(skillsGroupedData);
+    
+    skillsContainer.innerHTML = `
+        <div class="row g-4">
+            ${groupsArray.map((group, groupIndex) => {
+                const [groupName, skills] = group;
+                const colClass = groupsArray.length <= 2 ? 'col-lg-6' : 'col-lg-4';
+                
+                return `
+                    <div class="col-12 ${colClass}">
+                        <div class="skills-group fade-in">
+                            <h3 class="skills-group__title">${groupName}</h3>
+                            <div class="skills-group__items">
+                                ${skills.map(skill => `
+                                    <div class="skill-card">
+                                        <span class="skill-card__icon">${skill.icon}</span>
+                                        <h4 class="skill-card__name">${skill.name}</h4>
+                                    </div>
+                                `).join('')}
+                            </div>
+                        </div>
+                    </div>
+                `;
+            }).join('')}
         </div>
-    `).join('');
+    `;
 }
 
 // Exportar para uso en otros archivos
 if (typeof module !== 'undefined' && module.exports) {
-    module.exports = { skillsData, renderSkills };
+    module.exports = { skillsGroupedData, renderSkills };
 }
