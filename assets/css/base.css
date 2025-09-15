@@ -19,7 +19,7 @@
     font-size: var(--font-size-3xl);
     font-weight: var(--font-weight-bold);
     text-align: center;
-    margin-bottom: var(--space-md);
+    margin-bottom: var(--space-xs);
     color: var(--text-color);
 }
 

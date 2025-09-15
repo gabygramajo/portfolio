@@ -94,16 +94,44 @@
 
     /* About responsive */
     .about__container {
-        grid-template-columns: 1fr;
-        gap: var(--space-xl);
+        grid-template-columns: 78% 20%;
+        gap: var(--space-xs);
     }
-    
+
+    .about__card-container {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .about__image {
+        grid-row-start: span 1;   
+    }
+
+    .about__card__icons { 
+        flex-direction: column;
+        justify-content: center;
+    }
+
     /* Skills responsive */
     .skills__container {
         grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
         gap: var(--space-md);
     }
     
+    .location__text {
+      font-size: var(--font-size-sm);  
+    }
+    
+    .fa-location-dot {
+        font-size: var(--font-size-sm);
+    }
+
+    .about__card-description {
+        font-size: var(--font-size-normal);
+        grid-column-start: span 2;
+    }
+
     /* Projects responsive */
     .projects__container {
         grid-template-columns: 1fr;
