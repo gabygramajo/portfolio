@@ -227,22 +227,27 @@
 .about__card__icons {
     grid-row-start: span 1;
     display: flex;
-    margin-bottom: var(--space-md);   
+    margin-bottom: var(--space-xs);  
     order: 2; 
 }
 
 .about__card-description {
     grid-row-start: span 1;
-    color: var(--text-color-light);
-    line-height: var(--line-height-relaxed);
-    font-size: var(--font-size-lg);
-    margin-bottom: var(--space-xs);
-    text-align: left;
     order: 3;
 }
 
+.about__card-text {
+    color: var(--text-color-light);
+    line-height: var(--line-height-relaxed);
+    font-size: var(--font-size-normal);
+    margin-bottom: var(--space-xs);
+    text-align: left;
+}
+
 .about__card__icons-img {
-    max-width: 104px;
+    max-width: 80px;
+    width: 100%;
+    object-fit: contain;
 }
 
 /* Skills Section */

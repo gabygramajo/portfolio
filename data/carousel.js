@@ -3,19 +3,19 @@
 
 const carouselImages = [
     {
-        src: "https://avatars.githubusercontent.com/u/77758104?s=400&u=0b552b739deb570d277d80e8f1c715b9389655ea&v=4",
-        alt: "Foto profesional",
-        caption: "Gabriel Gramajo - Data Analyst"
+        src: "./assets/img/projects/Pescar2025.webp",
+        alt: "Foto Grupal Pasantía Artech & Fundación Pescar",
+        caption: "Pasantía Artech & Fundación Pescar"
     },
     {
-        src: "https://images.pexels.com/photos/3184292/pexels-photo-3184292.jpeg?auto=compress&cs=tinysrgb&w=400",
-        alt: "Trabajando con datos",
-        caption: "Analizando datos y creando insights"
+        src: "./assets/img/projects/Pescar2025-Presentación_2.webp",
+        alt: "Trabajando la comunicación y Oratoria",
+        caption: "Trabajando la comunicación y trabajo en equipo"
     },
     {
-        src: "https://images.pexels.com/photos/669619/pexels-photo-669619.jpeg?auto=compress&cs=tinysrgb&w=400",
-        alt: "Dashboard de análisis",
-        caption: "Creando dashboards interactivos"
+        src: "./assets/img/projects/Pescar2025-Presentación2_3.webp",
+        alt: "Trabajando la comunicación y trabajo en equipo",
+        caption: "Trabajando la comunicación y trabajo en equipo"
     }
 ];
 
