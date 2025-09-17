@@ -152,15 +152,16 @@
 }
 
 .skill-card__icon {
-    font-size: var(--font-size-2xl);
-    margin-bottom: var(--space-xs);
+    font-size: var(--font-size-xl);
+    margin-bottom: var(--space-xxs);
     display: block;
 }
 
 .skill-card__name {
-    font-size: var(--font-size-normal);
+    font-size: var(--font-size-sm);
     font-weight: var(--font-weight-semibold);
     color: var(--text-color);
+    line-height: var(--line-height-tight);
 }
 
 /* Project Card */

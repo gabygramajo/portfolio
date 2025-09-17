@@ -258,7 +258,7 @@
 .skills-group {
     background-color: var(--bg-color-card);
     border-radius: var(--border-radius-lg);
-    padding: var(--space-xl);
+    padding: var(--space-lg);
     border: 1px solid var(--border-color);
     height: 100%;
     transition: all var(--transition-duration) var(--transition-timing);
@@ -273,24 +273,29 @@
     font-size: var(--font-size-lg);
     font-weight: var(--font-weight-semibold);
     color: var(--primary-color);
-    margin-bottom: var(--space-lg);
+    margin-bottom: var(--space-md);
     text-align: center;
     border-bottom: 2px solid var(--border-color);
-    padding-bottom: var(--space-sm);
+    padding-bottom: var(--space-xs);
 }
 
 .skills-group__items {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-    gap: var(--space-md);
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: var(--space-sm);
 }
 
 .skills-group .skill-card {
     background-color: var(--bg-color-alt);
     border: 1px solid var(--border-color);
-    padding: var(--space-md);
+    padding: var(--space-sm);
     text-align: center;
     transition: all var(--transition-duration) var(--transition-timing);
+    min-height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .skills-group .skill-card:hover {
@@ -300,7 +305,9 @@
 }
 
 .skills-group .skill-card__name {
-    margin-top: var(--space-xs);
+    margin-top: var(--space-xxs);
+    font-size: var(--font-size-sm);
+    line-height: var(--line-height-tight);
 }
 
 /* Experience Section */
