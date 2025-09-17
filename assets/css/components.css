@@ -152,13 +152,13 @@
 }
 
 .skill-card__icon {
-    font-size: var(--font-size-3xl);
-    margin-bottom: var(--space-md);
+    font-size: var(--font-size-2xl);
+    margin-bottom: var(--space-xs);
     display: block;
 }
 
 .skill-card__name {
-    font-size: var(--font-size-lg);
+    font-size: var(--font-size-normal);
     font-weight: var(--font-weight-semibold);
     color: var(--text-color);
 }

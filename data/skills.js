@@ -19,26 +19,16 @@ const skillsGroupedData = {
             name: "NumPy",
             icon: "<i class=\"fa-solid fa-calculator\"></i>"
         },
-        {
-            name: "Matplotlib",
-            icon: "<i class=\"fa-solid fa-chart-line\"></i>"
-        }
     ],
-    "Visualización & BI": [
-        {
-            name: "Power BI",
-            icon: "<i class=\"fa-solid fa-chart-bar\"></i>"
-        }
-    ],
-    "Hojas de Cálculo": [
+    "Hojas de Cálculo, Visualización & BI": [
         {
             name: "Excel",
             icon: "<i class=\"fa-solid fa-file-excel\"></i>"
         },
         {
-            name: "Google Sheets",
-            icon: "<i class=\"fa-brands fa-google\"></i>"
-        }
+            name: "Power BI",
+            icon: "<i class=\"fa-solid fa-chart-bar\"></i>"
+        },
     ],
     "Cloud": [
         {
@@ -55,6 +45,16 @@ const skillsGroupedData = {
             name: "GitHub",
             icon: "<i class=\"fa-brands fa-github\"></i>"
         }
+    ],
+    "Herramientas de Gestión y Productividad:": [
+        {
+            name: "Bash",
+            icon: "<i class=\"fa-solid fa-terminal\"></i>"
+        },
+        {
+            name: "Jira Service Management",
+            icon: "<i class=\"fa-brands fa-jira\"></i>"
+        },
     ]
 };
 

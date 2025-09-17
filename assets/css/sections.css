@@ -270,7 +270,7 @@
 }
 
 .skills-group__title {
-    font-size: var(--font-size-xl);
+    font-size: var(--font-size-lg);
     font-weight: var(--font-weight-semibold);
     color: var(--primary-color);
     margin-bottom: var(--space-lg);
@@ -300,7 +300,6 @@
 }
 
 .skills-group .skill-card__name {
-    font-size: var(--font-size-sm);
     margin-top: var(--space-xs);
 }
 
