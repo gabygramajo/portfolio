@@ -31,6 +31,7 @@
     justify-content: center;
     order: 1;
     max-width: 30%;
+    min-width: 184px;
     padding-bottom: var(--space-xs);
 }
 
@@ -234,6 +235,7 @@
 .about__card-description {
     grid-row-start: span 1;
     order: 3;
+    padding: var(--space-xs);
 }
 
 .about__card-text {
@@ -252,7 +254,7 @@
 
 /* Skills Section */
 .skills__container-grouped {
-    margin-top: var(--space-2xl);
+    margin-top: var(--space-xs);
 }
 
 .skills-group {

@@ -218,6 +218,14 @@
     .mail {
         order: 1;
     }
+
+    .about__image {
+        grid-column-start: span 2;
+    }
+
+    .about__card__icons {
+        display: none;
+    }
 }
 
 /* Desktop medio - 1200px */

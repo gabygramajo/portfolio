@@ -67,28 +67,24 @@ function renderSkills() {
     const groupsArray = Object.entries(skillsGroupedData);
     
     skillsContainer.innerHTML = `
-        <div class="row g-4">
             ${groupsArray.map((group, groupIndex) => {
                 const [groupName, skills] = group;
                 const colClass = groupsArray.length <= 2 ? 'col-lg-6' : 'col-lg-4';
                 
                 return `
-                    <div class="col-12 ${colClass}">
-                        <div class="skills-group fade-in">
-                            <h3 class="skills-group__title">${groupName}</h3>
-                            <div class="skills-group__items">
-                                ${skills.map(skill => `
-                                    <div class="skill-card">
-                                        <span class="skill-card__icon">${skill.icon}</span>
-                                        <h4 class="skill-card__name">${skill.name}</h4>
-                                    </div>
-                                `).join('')}
-                            </div>
+                    <div class="skills-group fade-in">
+                        <h3 class="skills-group__title">${groupName}</h3>
+                        <div class="skills-group__items">
+                            ${skills.map(skill => `
+                                <div class="skill-card">
+                                    <span class="skill-card__icon">${skill.icon}</span>
+                                    <h4 class="skill-card__name">${skill.name}</h4>
+                                </div>
+                            `).join('')}
                         </div>
                     </div>
                 `;
             }).join('')}
-        </div>
     `;
 }
 
