@@ -244,7 +244,7 @@
 .certification-card {
     background-color: var(--bg-color-card);
     border-radius: var(--border-radius-lg);
-    padding: var(--space-xl);
+    padding: var(--space-xs);
     text-align: center;
     border: 1px solid var(--border-color);
     transition: all var(--transition-duration) var(--transition-timing);
@@ -256,9 +256,9 @@
 }
 
 .certification-card__logo {
-    width: 60px;
-    height: 60px;
-    margin: 0 auto var(--space-lg);
+    width: 90px;
+    height: 90px;
+    margin: 0 auto .4rem;
     background-color: var(--bg-color-alt);
     border-radius: var(--border-radius-lg);
     display: flex;
@@ -276,7 +276,7 @@
 
 .certification-card__institution {
     color: var(--text-color-light);
-    margin-bottom: var(--space-lg);
+    margin-bottom: var(--space-sm);
     font-size: var(--font-size-sm);
 }
 

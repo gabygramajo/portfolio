@@ -3,30 +3,12 @@
 
 const experienceData = [
     {
-        position: "Data Analyst",
-        company: "Tech Solutions Inc.",
-        period: "2023 - Presente",
-        location: "Buenos Aires, Argentina",
-        description: "Análisis de datos de ventas y marketing, creación de dashboards interactivos en Power BI, y desarrollo de reportes automatizados para la toma de decisiones estratégicas.",
-        achievements: [
-            "Implementé un sistema de reportes que redujo el tiempo de análisis en un 40%",
-            "Creé dashboards que mejoraron la visibilidad de KPIs clave para el equipo directivo",
-            "Automaticé procesos de ETL que procesaban más de 100,000 registros diarios"
-        ],
-        technologies: ["Power BI", "SQL", "Python", "Excel"]
-    },
-    {
-        position: "Junior Data Analyst",
-        company: "DataCorp Solutions",
-        period: "2022 - 2023",
-        location: "Buenos Aires, Argentina",
-        description: "Soporte en análisis de datos, limpieza y preparación de datasets, y asistencia en la creación de visualizaciones para diferentes departamentos.",
-        achievements: [
-            "Participé en proyectos de migración de datos a la nube (AWS)",
-            "Desarrollé scripts en Python para automatizar tareas repetitivas",
-            "Colaboré en la implementación de mejores prácticas de calidad de datos"
-        ],
-        technologies: ["Python", "SQL", "Excel", "AWS"]
+        position: "Prácticas Profesionales de Data Analyst Trainee",
+        company: "Artech & Fundación Pescar",
+        period: "07/2025 - 12/2025",
+        location: "CABA, Buenos Aires, Argentina",
+        description: "Capacitación en Análisis de datos e Inteligencia artificial, limpieza y visualización de datos, procesos ETL con Power BI y Databricks, y automatización de flujos de trabajo con N8N y Powerapps.",
+        technologies: ["Python", "SQL", "Power BI", "Excel", "Databricks", "PowerApps", "N8N"]
     }
 ];
 
@@ -57,15 +39,6 @@ function renderExperience() {
             
             <div class="experience-card__content">
                 <p class="experience-card__description">${exp.description}</p>
-                
-                <div class="experience-card__achievements">
-                    <h5 class="experience-card__achievements-title">Logros principales:</h5>
-                    <ul class="experience-card__achievements-list">
-                        ${exp.achievements.map(achievement => `
-                            <li>${achievement}</li>
-                        `).join('')}
-                    </ul>
-                </div>
                 
                 <div class="experience-card__technologies">
                     <h5 class="experience-card__tech-title">Tecnologías utilizadas:</h5>

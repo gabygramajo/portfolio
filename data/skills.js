@@ -30,13 +30,11 @@ const skillsGroupedData = {
             icon: "<i class=\"fa-solid fa-chart-bar\"></i>"
         },
     ],
-    "Cloud": [
+    "Herramientas y entornos": [
         {
             name: "AWS",
             icon: "<i class=\"fa-brands fa-aws\"></i>"
-        }
-    ],
-    "Control de Versiones": [
+        },
         {
             name: "Git",
             icon: "<i class=\"fa-brands fa-git-alt\"></i>"
@@ -44,9 +42,7 @@ const skillsGroupedData = {
         {
             name: "GitHub",
             icon: "<i class=\"fa-brands fa-github\"></i>"
-        }
-    ],
-    "Herramientas de Gestión y Productividad:": [
+        },
         {
             name: "Bash",
             icon: "<i class=\"fa-solid fa-terminal\"></i>"
@@ -54,8 +50,8 @@ const skillsGroupedData = {
         {
             name: "Jira Service Management",
             icon: "<i class=\"fa-brands fa-jira\"></i>"
-        },
-    ]
+        }
+    ],
 };
 
 // Función para renderizar skills agrupados
@@ -69,7 +65,6 @@ function renderSkills() {
     skillsContainer.innerHTML = `
             ${groupsArray.map((group, groupIndex) => {
                 const [groupName, skills] = group;
-                const colClass = groupsArray.length <= 2 ? 'col-lg-6' : 'col-lg-4';
                 
                 return `
                     <div class="skills-group fade-in">

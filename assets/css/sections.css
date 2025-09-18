@@ -255,14 +255,18 @@
 /* Skills Section */
 .skills__container-grouped {
     margin-top: var(--space-xs);
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 1rem;
 }
 
 .skills-group {
-    background-color: var(--bg-color-card);
-    border-radius: var(--border-radius-lg);
-    padding: var(--space-lg);
-    border: 1px solid var(--border-color);
-    height: 100%;
+    flex-grow: 1;
+    /* background-color: var(--bg-color-card); */
+    /* border-radius: var(--border-radius-lg); */
+    padding: var(--space-sm);
+    /* border: 1px solid var(--border-color); */
     transition: all var(--transition-duration) var(--transition-timing);
 }
 
@@ -275,25 +279,29 @@
     font-size: var(--font-size-lg);
     font-weight: var(--font-weight-semibold);
     color: var(--primary-color);
-    margin-bottom: var(--space-md);
+    margin-bottom: var(--space-sm);
     text-align: center;
     border-bottom: 2px solid var(--border-color);
     padding-bottom: var(--space-xs);
 }
 
 .skills-group__items {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
     gap: var(--space-sm);
 }
 
 .skills-group .skill-card {
+    min-height: auto;
+    max-width: fit-content;
+    min-width: 80px;
     background-color: var(--bg-color-alt);
     border: 1px solid var(--border-color);
-    padding: var(--space-sm);
+    padding: var(--space-xs);
     text-align: center;
     transition: all var(--transition-duration) var(--transition-timing);
-    min-height: auto;
+    flex-grow: 1;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -443,7 +451,7 @@
 
 /* Education Section */
 .education__section {
-    margin-bottom: var(--space-4xl);
+    margin-bottom: var(--space-lg);
 }
 
 .education__section:last-child {
@@ -454,7 +462,7 @@
     font-size: var(--font-size-2xl);
     font-weight: var(--font-weight-semibold);
     color: var(--primary-color);
-    margin-bottom: var(--space-xl);
+    margin-bottom: var(--space-lg);
     text-align: center;
     position: relative;
 }
@@ -480,7 +488,7 @@
 .education-card {
     background-color: var(--bg-color-card);
     border-radius: var(--border-radius-lg);
-    padding: var(--space-xl);
+    padding: var(--space-lg);
     border: 1px solid var(--border-color);
     transition: all var(--transition-duration) var(--transition-timing);
     display: flex;
@@ -511,15 +519,15 @@
 }
 
 .education-card__title {
-    font-size: var(--font-size-lg);
+    font-size: var(--font-size-3xl);
     font-weight: var(--font-weight-semibold);
     margin-bottom: var(--space-sm);
-    color: var(--text-color);
+    color: var(--primary-color);
 }
 
 .education-card__institution {
-    color: var(--primary-color);
-    margin-bottom: var(--space-sm);
+    color: var(--text-color);
+    /* margin-bottom: var(--space-sm); */
     font-weight: var(--font-weight-medium);
 }
 
@@ -527,7 +535,7 @@
     display: flex;
     justify-content: center;
     gap: var(--space-md);
-    margin-bottom: var(--space-md);
+    margin-bottom: var(--space-xs);
     flex-wrap: wrap;
 }
 
@@ -545,6 +553,7 @@
     color: var(--text-color-light);
     line-height: var(--line-height-relaxed);
     font-size: var(--font-size-sm);
+    margin-bottom: 0;
 }
 
 /* Contact Section */
