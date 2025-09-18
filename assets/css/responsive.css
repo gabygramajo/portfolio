@@ -164,9 +164,17 @@
     }
     
     /* Footer responsive */
+    .footer {
+        padding: var(--space-sm) 0;
+    }
+
     .footer__content {
         flex-direction: column;
         text-align: center;
+    }
+
+    .footer__links {
+        gap: var(--space-xs) var(--space-xl);
     }
 }
 
