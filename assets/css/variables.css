@@ -16,6 +16,7 @@
     --bg-color: #f8f9fa;
     --bg-color-alt: #e9ecef;
     --bg-color-card: #ffffff;
+    --bg-color-rgb: 248, 249, 250;
     
     /* Colores de borde */
     --border-color: #ced4da;
@@ -90,6 +91,7 @@
     --bg-color: #212529;
     --bg-color-alt: #343a40;
     --bg-color-card: #343a40;
+    --bg-color-rgb: 33, 37, 41;
     
     --border-color: #495057;
     --border-color-light: #6c757d;

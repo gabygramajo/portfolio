@@ -341,20 +341,72 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.net.min.js"></script>
     <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            VANTA.NET({
+        let vantaEffect = null;
+        
+        function initVantaEffect() {
+            // Destruir efecto anterior si existe
+            if (vantaEffect) {
+                vantaEffect.destroy();
+            }
+            
+            // Detectar tema actual
+            const currentTheme = document.documentElement.getAttribute('data-theme') || 'dark';
+            
+            // Configuración para modo oscuro
+            const darkConfig = {
                 el: "#home",
                 mouseControls: false,
                 touchControls: false,
                 gyroControls: false,
                 scale: 1.00,
                 scaleMobile: 1.00,
-                color: 0x6c757d,
-                backgroundColor: 0x212529,
-                points: 16.00,
-                maxDistance: 14.00,
-                spacing: 14.00,
+                color: 0x008b8b,        // Color primario del sitio
+                backgroundColor: 0x212529, // Fondo oscuro
+                points: 12.00,
+                maxDistance: 16.00,
+                spacing: 16.00,
                 showDots: true
+            };
+            
+            // Configuración para modo claro
+            const lightConfig = {
+                el: "#home",
+                mouseControls: false,
+                touchControls: false,
+                gyroControls: false,
+                scale: 1.00,
+                scaleMobile: 1.00,
+                color: 0x007676,        // Color primario más oscuro para contraste
+                backgroundColor: 0xf8f9fa, // Fondo claro
+                points: 10.00,
+                maxDistance: 18.00,
+                spacing: 18.00,
+                showDots: true
+            };
+            
+            // Aplicar configuración según el tema
+            const config = currentTheme === 'dark' ? darkConfig : lightConfig;
+            vantaEffect = VANTA.NET(config);
+        }
+        
+        document.addEventListener('DOMContentLoaded', () => {
+            // Inicializar efecto
+            initVantaEffect();
+            
+            // Escuchar cambios de tema
+            const observer = new MutationObserver((mutations) => {
+                mutations.forEach((mutation) => {
+                    if (mutation.type === 'attributes' && mutation.attributeName === 'data-theme') {
+                        // Pequeño delay para asegurar que el CSS se haya aplicado
+                        setTimeout(initVantaEffect, 100);
+                    }
+                });
+            });
+            
+            // Observar cambios en el atributo data-theme
+            observer.observe(document.documentElement, {
+                attributes: true,
+                attributeFilter: ['data-theme']
             });
         });
     </script>

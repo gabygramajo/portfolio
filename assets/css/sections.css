@@ -6,7 +6,27 @@
     display: flex;
     align-items: center;
     padding-top: var(--header-height);
-    background: linear-gradient(135deg, var(--bg-color) 0%, var(--bg-color-alt) 100%);
+    position: relative;
+    /* Removemos el background gradient para que Vanta.js maneje el fondo */
+}
+
+/* Asegurar que el contenido esté por encima de la animación */
+.hero__container {
+    position: relative;
+    z-index: 2;
+}
+
+/* Overlay sutil para mejorar legibilidad del texto */
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(var(--bg-color-rgb), 0.1);
+    z-index: 1;
+    pointer-events: none;
 }
 
 .hero__container {
