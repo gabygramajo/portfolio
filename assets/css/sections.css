@@ -585,11 +585,8 @@
 
 /* Contact Section */
 .contact__container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: var(--space-4xl);
-    max-width: 1000px;
-    margin: 0 auto;
+   display: flex;
+    justify-content: center;
 }
 
 .contact__info {
@@ -632,15 +629,17 @@
 
 /* Formulario de contacto */
 .contact__form {
+    width: 100%;
+    max-width: 500px;
     background-color: var(--bg-color-card);
     border-radius: var(--border-radius-lg);
-    padding: var(--space-2xl);
+    padding: var(--space-sm) var(--space-lg);
     border: 1px solid var(--border-color);
 }
 
-.contact__form-group {
+/* .contact__form-group {
     margin-bottom: var(--space-lg);
-}
+} */
 
 .contact__form-label {
     display: block;
@@ -681,7 +680,7 @@
 
 .contact__form-button {
     width: 100%;
-    margin-bottom: var(--space-lg);
+    margin-bottom: var(--space-xs);
 }
 
 .contact__form-message {
