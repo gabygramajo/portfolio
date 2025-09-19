@@ -108,6 +108,9 @@
 .hero__buttons .btn {
     background-color: var(--bg-color);
 }
+.hero__buttons .btn:hover {
+    background-color: var(--primary-color);
+}
 
 .hero__social {
     display: flex;
