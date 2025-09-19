@@ -85,6 +85,10 @@
     margin-bottom: var(--space-xl);
 }
 
+.hero__buttons .btn {
+    background-color: var(--bg-color);
+}
+
 .hero__social {
     display: flex;
     justify-content: center;
