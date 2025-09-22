@@ -7,8 +7,8 @@ const experienceData = [
         company: "Artech & Fundación Pescar",
         period: "07/2025 - 12/2025",
         location: "CABA, Buenos Aires, Argentina",
-        description: "Capacitación en Análisis de datos e Inteligencia artificial, limpieza y visualización de datos, procesos ETL con Power BI y Databricks, y automatización de flujos de trabajo con N8N y Powerapps.",
-        technologies: ["Python", "SQL", "Power BI", "Excel", "Databricks", "PowerApps", "N8N"]
+        description: "Capacitación en Análisis de datos e Inteligencia artificial, limpieza y visualización de datos, procesos ETL con Power BI y Databricks, y automatización de flujos de trabajo con N8N, Power Automate y Powerapps.",
+        technologies: ["Python", "SQL", "Power BI", "Excel", "Databricks", "Power Automate", "PowerApps", "N8N"]
     }
 ];
 
