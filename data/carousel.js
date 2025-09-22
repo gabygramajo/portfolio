@@ -10,10 +10,6 @@ const carouselImages = [
         src: "./assets/img/projects/Pescar2025-Presentación_2.webp",
         alt: "Trabajando la comunicación y Oratoria",
     },
-    {
-        src: "./assets/img/projects/Pescar2025-Presentación2_3.webp",
-        alt: "Trabajando la comunicación y trabajo en equipo",
-    }
 ];
 
 // Función para renderizar el carrusel
