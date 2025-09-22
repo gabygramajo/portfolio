@@ -3,13 +3,17 @@
 
 const carouselImages = [
     {
-        src: "./assets/img/projects/Pescar2025.webp",
+        src: "./assets/img/carousel/Pescar2025.webp",
         alt: "Foto Grupal Pasantía Artech & Fundación Pescar",
     },
     {
-        src: "./assets/img/projects/Pescar2025-Presentación_2.webp",
+        src: "./assets/img/carousel/Pescar2025-Presentación_2.webp",
         alt: "Trabajando la comunicación y Oratoria",
     },
+    {
+        src: "./assets/img/carousel/Grupo3-Artech.webp",
+        alt: "Equipo de Trabajo",
+    }
 ];
 
 // Función para renderizar el carrusel

@@ -59,7 +59,7 @@
     width: 100%;
     height: 100%;
     border-radius: var(--border-radius-full);
-    object-fit: cover;
+    object-fit: contain;
     box-shadow: var(--shadow-xl);
     border: 4px solid var(--bg-color-card);
 }
@@ -189,6 +189,8 @@
 
 .carousel-item img {
     border-radius: var(--border-radius-lg);
+    max-width: 500px;
+    max-height: 350px;
 }
 
 .carousel-caption-text {
