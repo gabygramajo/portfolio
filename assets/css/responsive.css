@@ -188,6 +188,10 @@
         font-size: var(--font-size-4xl);
     }
     
+    .hero__subtitle {
+        font-size: var(--font-size-normal);
+    }
+
     .hero__buttons {
         flex-direction: column;
         align-items: center;

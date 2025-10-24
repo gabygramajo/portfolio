@@ -3,20 +3,20 @@
 
 const projectsData = [
     {
-        title: "Dashboard de Ventas Globales",
-        description: "Dashboard interactivo en Power BI para analizar las ventas mensuales, tendencias de productos y rendimiento de sucursales en distintas regiones, con KPIs dinámicos y filtros personalizados.",
-        image: "https://images.pexels.com/photos/669619/pexels-photo-669619.jpeg?auto=compress&cs=tinysrgb&w=600",
-        technologies: ["Power BI", "SQL", "Excel", "DAX"],
-        githubUrl: "https://github.com/tu-usuario/dashboard-ventas-globales",
-        demoUrl: "https://tu-dashboard-ventas-demo.netlify.app"
+        title: "ETL con Python",
+        description: "Extraí datos desde una API, transforme los daots utilizando pandas y lo cargué en una BD. Luego utilice FastAPI para crear una API REST y consumir los datos",
+        image: "../assets/img/projects/ETL.webp",
+        technologies: ["Python", "", "Pandas", "Fastapi"],
+        githubUrl: "https://github.com/gabygramajo/Python_ETL",
+        demoUrl: "https://github.com/gabygramajo/Python_ETL"
     },
     {
-        title: "Dashboard de Recursos Humanos",
-        description: "Dashboard interactivo que analiza métricas clave de empleados, como rotación, ausentismo, antigüedad y desempeño, proporcionando visualizaciones dinámicas y reportes automáticos.",
-        image: "https://images.pexels.com/photos/3184292/pexels-photo-3184292.jpeg?auto=compress&cs=tinysrgb&w=600",
-        technologies: ["Power BI", "SQL", "Excel"],
-        githubUrl: "https://github.com/tu-usuario/dashboard-recursos-humanos",
-        demoUrl: "https://tu-dashboard-rh-demo.netlify.app"
+        title: "Reporte de Amenazas Globales a la Ciberseguridad de 2015 a 2024",
+        description: "Dashboard interactivo que analiza métricas clave que responde al 'qué, dónde y cuánto' del impacto de los ciberataques, mostrando los países más afectados, las industrias más vulnerables, se puede filtrar por un tipo de ataque específico para analizar en detalle las vulnerabilidades que explota, las defensas más comunes y los actores de amenaza detrás de ellos.",
+        image: "../assets/img/projects/ReportedeAmenazasCiberseguridad.png",
+        technologies: ["Power BI", "DAX", "Powerquery"],
+        githubUrl: "https://github.com/gabygramajo/Dashboard_Global_Cybersecurity_Threats/tree/main",
+        demoUrl: "https://github.com/gabygramajo/Dashboard_Global_Cybersecurity_Threats/tree/main"
     }
 ];
 

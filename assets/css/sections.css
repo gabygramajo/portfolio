@@ -83,7 +83,7 @@
 
 .hero__subtitle {
     font-size: var(--font-size-3xl);
-    color: var(--text-color-light);
+    color: var(--secondary-color-Mustard);
     margin-bottom: var(--space-lg);
     font-weight: var(--font-weight-bold);
     text-align: center;

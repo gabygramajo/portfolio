@@ -7,10 +7,24 @@
     --primary-color-light: #00a0a0;
     --primary-color-dark: #007676;
     
+    /* --- Colores secundarios --- */
+    --secondary-color-Burnt-Orange: #E67E22;
+    --secondary-color-Coral: #FF7F50;
+    --secondary-color-Vivid-Orange: #FFA500;
+
+    --secondary-color-Gold: #FFD700;
+    --secondary-color-Mustard: #DAA520;
+    --secondary-color-Antique-Gold: #B8860B;
+
+    --secondary-color-Navy: #000080;
+    --secondary-color-Teal-Blue: #367588;
+    --secondary-color-Steel-Blue: #4682B4;
+
     /* Colores de texto */
     --text-color: #212529;
     --text-color-light: #495057;
     --text-color-lighter: #6c757d;
+    --text-color-mustard: #DAA520;
     
     /* Colores de fondo */
     --bg-color: #f8f9fa;
