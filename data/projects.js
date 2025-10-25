@@ -5,7 +5,7 @@ const projectsData = [
     {
         title: "ETL con Python",
         description: "Extraí datos desde una API, transforme los daots utilizando pandas y lo cargué en una BD. Luego utilice FastAPI para crear una API REST y consumir los datos",
-        image: "../assets/img/projects/ETL.webp",
+        image: "./assets/img/projects/ETL.webp",
         technologies: ["Python", "", "Pandas", "Fastapi"],
         githubUrl: "https://github.com/gabygramajo/Python_ETL",
         demoUrl: "https://github.com/gabygramajo/Python_ETL"
@@ -13,7 +13,7 @@ const projectsData = [
     {
         title: "Reporte de Amenazas Globales a la Ciberseguridad de 2015 a 2024",
         description: "Dashboard interactivo que analiza métricas clave que responde al 'qué, dónde y cuánto' del impacto de los ciberataques, mostrando los países más afectados, las industrias más vulnerables, se puede filtrar por un tipo de ataque específico para analizar en detalle las vulnerabilidades que explota, las defensas más comunes y los actores de amenaza detrás de ellos.",
-        image: "../assets/img/projects/ReportedeAmenazasCiberseguridad.png",
+        image: "./assets/img/projects/ReportedeAmenazasCiberseguridad.png",
         technologies: ["Power BI", "DAX", "Powerquery"],
         githubUrl: "https://github.com/gabygramajo/Dashboard_Global_Cybersecurity_Threats/tree/main",
         demoUrl: "https://github.com/gabygramajo/Dashboard_Global_Cybersecurity_Threats/tree/main"
