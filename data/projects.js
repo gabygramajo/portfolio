@@ -4,19 +4,27 @@
 const projectsData = [
     {
         title: "ETL con Python",
-        description: "Extraí datos desde una API, transforme los daots utilizando pandas y lo cargué en una BD. Luego utilice FastAPI para crear una API REST y consumir los datos",
+        description: "Extraí datos desde una API, transformé los datos utilizando pandas y los cargué en una Base de Datos Relacional.",
         image: "./assets/img/projects/ETL.webp",
-        technologies: ["Python", "", "Pandas", "Fastapi"],
+        technologies: ["Python", "sqlite", "Pandas", "Fastapi"],
         githubUrl: "https://github.com/gabygramajo/Python_ETL",
         demoUrl: "https://github.com/gabygramajo/Python_ETL"
     },
     {
         title: "Reporte de Amenazas Globales a la Ciberseguridad de 2015 a 2024",
         description: "Dashboard interactivo que analiza métricas clave que responde al 'qué, dónde y cuánto' del impacto de los ciberataques, mostrando los países más afectados, las industrias más vulnerables, se puede filtrar por un tipo de ataque específico para analizar en detalle las vulnerabilidades que explota, las defensas más comunes y los actores de amenaza detrás de ellos.",
-        image: "./assets/img/projects/ReportedeAmenazasCiberseguridad.png",
+        image: "./assets/img/projects/ReportedeAmenazasCiberseguridad.webp",
         technologies: ["Power BI", "DAX", "Powerquery"],
         githubUrl: "https://github.com/gabygramajo/Dashboard_Global_Cybersecurity_Threats/tree/main",
         demoUrl: "https://github.com/gabygramajo/Dashboard_Global_Cybersecurity_Threats/tree/main"
+    },
+    {
+        title: "SIRA - Sistema Inteligente de Reportes Automatizados",
+        description: "Junto a mi equipo, desarrollamos SIRA e InfraQuery, una solución integral basada en Inteligencia Artificial para la gestión de infraestructura. Creamos un agente inteligente capaz de automatizar consultas complejas, logrando reducir la gestión de activos y la generación de reportes de horas de trabajo manual a solo segundos de procesamiento autónomo.",
+        image: "./assets/img/projects/WorkFlow-N8N.webp",
+        technologies: ["N8N", "Python", "Gemini-2.5-flash", "PostgreSQL", "Supabase", "Google Drive", "Excel", "Gmail"],
+        githubUrl: "https://github.com/gabygramajo/cliente-gestion-activos-de-infraestructura",
+        demoUrl: "https://github.com/gabygramajo/cliente-gestion-activos-de-infraestructura"
     }
 ];
 
