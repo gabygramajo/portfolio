@@ -249,14 +249,19 @@
 
 }
 
-/* Desktop grande - 1200px+ */
-@media screen and (min-width: 1200px) {
-    
-    .skills__container {
-        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-    }
+/* Notebooks y Escritorios (Pantallas mayores a 1024px) */
+@media screen and (min-width: 1024px) {
     
     .projects__container {
-        grid-template-columns: repeat(auto-fit, minmax(400px, 480px));
+        /* FORZAMOS 3 COLUMNAS EXACTAS */
+        grid-template-columns: repeat(3, 1fr); 
+        
+        /* Ajustamos el espacio (gap) para que no queden muy pegadas */
+        gap: var(--space-lg); 
+    }
+
+    /* Opcional: Ajuste fino para skills si lo deseas mantener */
+    .skills__container {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     }
 }

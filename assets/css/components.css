@@ -166,6 +166,10 @@
 
 /* Project Card */
 .project-card {
+    /* Aseguramos que la tarjeta sea un contenedor flexible vertical */
+    display: flex;
+    flex-direction: column; 
+    height: 100%; /* Ocupa toda la altura que le de la grilla */
     background-color: var(--bg-color-card);
     border-radius: var(--border-radius-lg);
     overflow: hidden;
@@ -180,20 +184,22 @@
 
 .project-card__image {
     width: 100%;
-    height: auto;
-    max-height: 268px;
+    aspect-ratio: 16 / 9;
     overflow: hidden;
     position: relative;
 
     display: flex;
     justify-content: center; 
     align-items: center;
+    /* Fondo por si la imagen tarda en cargar */
+    background-color: var(--bg-color-alt);
 }
 
 .project-card__img {
     width: 100%;
     height: 100%;
-    object-fit: contain;
+    object-fit: cover;
+    object-position: top center;
     transition: transform var(--transition-duration) var(--transition-timing);
 }
 
@@ -202,6 +208,10 @@
 }
 
 .project-card__content {
+    /* Hacemos que el contenido ocupe el espacio restante */
+    flex: 1;
+    display: flex;
+    flex-direction: column;
     padding: var(--space-xl);
 }
 
@@ -213,9 +223,13 @@
 }
 
 .project-card__description {
+    font-size: var(--font-size-sm);
     color: var(--text-color-light);
     margin-bottom: var(--space-lg);
     line-height: var(--line-height-relaxed);
+    /* Empuja todo lo que esté debajo (los botones) hacia el fondo */
+    margin-bottom: auto; 
+    padding-bottom: var(--space-lg); /* Espacio extra visual */
 }
 
 .project-card__tech {
