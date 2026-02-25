@@ -3,12 +3,12 @@
 
 const projectsData = [
     {
-        title: "ETL con Python",
-        description: "Extraí datos desde una API, transformé los datos utilizando pandas y los cargué en una Base de Datos Relacional.",
+        title: "Cafe Sales ETL",
+        description: "A partir de un dataset 'sucio' de ventas de una cadena de cafeterías, limpiarlo, modelarlo y construir un pipeline ETL para alimentar un dashboard de negocio.",
         image: "./assets/img/projects/ETL.webp",
-        technologies: ["Python", "sqlite", "Pandas", "Fastapi"],
-        githubUrl: "https://github.com/gabygramajo/Python_ETL",
-        demoUrl: "https://github.com/gabygramajo/Python_ETL"
+        technologies: ["Python", "Pandas", "Power BI"],
+        githubUrl: "https://github.com/gabygramajo/cafesales_etl_project",
+        demoUrl: "https://github.com/gabygramajo/cafesales_etl_project"
     },
     {
         title: "Reporte de Amenazas Globales a la Ciberseguridad de 2015 a 2024",

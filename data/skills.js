@@ -50,7 +50,11 @@ const skillsGroupedData = {
         {
             name: "Jira Service Management",
             icon: "<i class=\"fa-brands fa-jira\"></i>"
-        }
+        },
+        {
+            name: "Docker",
+            icon: "<i class=\"fa-brands fa-docker\"></i>"
+        },
     ],
 };
 
