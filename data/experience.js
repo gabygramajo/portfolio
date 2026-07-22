@@ -3,11 +3,11 @@
 
 const experienceData = [
     {
-        position: "Prácticas Profesionales de Data Analyst Trainee",
+        position: "Pasante IT Data & Process Automation Trainee",
         company: "Artech & Fundación Pescar",
         period: "07/2025 - 12/2025",
         location: "CABA, Buenos Aires, Argentina",
-        description: "Capacitación en Análisis de datos e Inteligencia artificial, limpieza y visualización de datos, procesos ETL con Power BI y Databricks, y automatización de flujos de trabajo con N8N, Power Automate y Powerapps.",
+        description: "Práctica formativa en análisis de Datos y Automatización de Procesos. Implementé sistemas automatizados de consulta y orquestación de datos utilizando n8n, integrando Agentes de IA y APIs. Procesos ETL utilizando Python y SQL, asegurando la calidad y consistencia de los datos para su posterior análisis.Modelos y normalización de datos y dashboards en Power BI, utilizando DAX para métricas de rendimiento.",
         technologies: ["Python", "SQL", "Power BI", "Excel", "Databricks", "Power Automate", "PowerApps", "N8N"]
     }
 ];
